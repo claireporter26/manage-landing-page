@@ -1,3 +1,24 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  height: 100%;
+  line-height: 2;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -5,5 +26,65 @@
 
 .attribution a {
   color: #3e52a3;
+}
+
+.hamburger-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.main-container_intro {
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em .5em;
+}
+
+nav ul {
+  display: none;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.header-section {
+  margin-bottom: 4em;
+}
+
+.intro-section_header {
+  margin: 3em;
+}
+
+.middle-section {
+  text-align: left;
+  margin-bottom: 4em;
+}
+
+.middle-section_subtitle-number {
+  padding: .4em 1.5em;
+  border-radius: 20px;
+  background-color: #f25f3a;
+  color: #fff;
+}
+
+button {
+  border-radius: 20px;
+  padding: .9em 1.7em;
+  border: none;
+  margin: 2em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+.main-container {
+    text-align: center;
+    
+    &_intro {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em .5em;
+
+    ul {
+       display: none; 
+    }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+    }
+}
+
+.header-section {
+    margin-bottom: 4em;
+
+
+}
+
+.intro-section {
+
+    &_header {
+        margin: 3em;
+    }
+}
+
+.middle-section {
+    text-align: left;
+    margin-bottom: 4em;
+
+    &_subtitle-number {
+        padding: .4em 1.5em;
+        border-radius: 20px;
+        background-color: $brightOrange;
+        color: #fff;
+    }
+}
+
+
+
