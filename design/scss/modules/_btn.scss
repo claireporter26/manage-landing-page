@@ -4,3 +4,15 @@ button {
     border: none;
     margin: 2em;
 }
+
+.get-started-btn {
+    &--dark {
+        background-color: $brightOrange;
+        color: #fff;
+    }
+
+    &--light {
+        background-color: #fff;
+        color: $brightOrange;
+    }
+}

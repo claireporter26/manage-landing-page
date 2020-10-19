@@ -1,7 +1,7 @@
 .main-container {
     text-align: center;
     
-    &_intro {
+    &_smaller {
         width: 90%;
         margin: 0 auto;
     }
@@ -39,11 +39,66 @@ nav {
     text-align: left;
     margin-bottom: 4em;
 
+    &_section {
+        margin: 3em 0;
+    }
+
     &_subtitle-number {
-        padding: .4em 1.5em;
+        padding: .2em 1.5em .4em 1.5em;
         border-radius: 20px;
         background-color: $brightOrange;
         color: #fff;
+        margin-right: .5rem;
+    }
+}
+
+.testimonial {
+    margin: 3em 0 6em 0;
+    background-color: $veryLightGray;
+    position: relative;
+    padding: 3em 1em;
+
+    &_image {
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+        display: block;
+        margin: auto;
+    }
+
+    &_name {
+        margin: 1.2em 0;
+    }
+
+    &_activeIcon-section {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        
+    }
+
+    &_indicator-icon {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        border: solid;
+        border-width: 1px;
+        border-color: $brightOrange; 
+        margin: auto .3em;
+        
+        content: " ";
+
+        &--active {
+            background-color: $brightOrange;
+        }
+    }
+
+    &_2, &_3, &_4 {
+        display: none;
     }
 }
 
