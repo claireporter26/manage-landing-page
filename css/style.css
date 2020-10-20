@@ -7,7 +7,7 @@
 
 body, html {
   height: 100%;
-  line-height: 2;
+  line-height: 1.7;
 }
 
 body {
@@ -44,10 +44,11 @@ img {
 
 .main-container {
   text-align: center;
+  padding: .4em;
 }
 
 .main-container_smaller {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -74,8 +75,22 @@ nav li {
   margin-bottom: 4em;
 }
 
+.header-section--title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: .3em 0;
+}
+
+.section-header {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: .5em 0;
+}
+
 .intro-section_header {
-  margin: 3em;
+  margin: 3em 0;
 }
 
 .middle-section {
@@ -85,6 +100,14 @@ nav li {
 
 .middle-section_section {
   margin: 3em 0;
+}
+
+.middle-section_subtitle {
+  margin: .7em 0;
+  background-color: rgba(242, 95, 58, 0.1);
+  padding: .2em .1em .4em .1em;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .middle-section_subtitle-number {
@@ -145,6 +168,10 @@ nav li {
 
 .testimonial_2, .testimonial_3, .testimonial_4 {
   display: none;
+}
+
+.getstarted-section {
+  background-color: #f25f3a;
 }
 
 button {

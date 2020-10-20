@@ -1,8 +1,9 @@
 .main-container {
     text-align: center;
+    padding: .4em;
     
     &_smaller {
-        width: 90%;
+        width: 75%;
         margin: 0 auto;
     }
 }
@@ -25,13 +26,28 @@ nav {
 .header-section {
     margin-bottom: 4em;
 
+    &--title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: .3em 0;
+    }
 
+
+}
+
+.section-header {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: .5em 0;
 }
 
 .intro-section {
 
     &_header {
-        margin: 3em;
+        margin: 3em 0;
+        
     }
 }
 
@@ -43,12 +59,23 @@ nav {
         margin: 3em 0;
     }
 
+    &_subtitle {
+        margin: .7em 0;
+        background-color: rgba($brightOrange, .1);
+        padding: .2em .1em .4em .1em;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+        
+    }
+
     &_subtitle-number {
         padding: .2em 1.5em .4em 1.5em;
         border-radius: 20px;
         background-color: $brightOrange;
         color: #fff;
         margin-right: .5rem;
+        
     }
 }
 
@@ -100,6 +127,10 @@ nav {
     &_2, &_3, &_4 {
         display: none;
     }
+}
+
+.getstarted-section {
+    background-color: $brightOrange;
 }
 
 
