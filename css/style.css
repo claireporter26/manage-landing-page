@@ -13,6 +13,7 @@ body, html {
 body {
   font-size: 16px;
   font-family: 'Be Vietnam', sans-serif;
+  color: #242d52;
 }
 
 img {
@@ -48,7 +49,7 @@ img {
 }
 
 .main-container_smaller {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -71,15 +72,23 @@ nav li {
   display: inline-block;
 }
 
+.txt--light {
+  color: #9095a7;
+}
+
 .header-section {
   margin-bottom: 4em;
 }
 
-.header-section--title {
-  font-size: 2.5rem;
+.header-section_title {
+  font-size: 2.3rem;
   font-weight: 700;
   line-height: 1.3;
   margin: .3em 0;
+}
+
+.header-section_para {
+  font-size: 1rem;
 }
 
 .section-header {
@@ -176,9 +185,11 @@ nav li {
 
 button {
   border-radius: 20px;
-  padding: .9em 1.7em;
+  padding: 1em 2.2em;
   border: none;
   margin: 2em;
+  font-weight: 700;
+  color: #9095a7;
 }
 
 .get-started-btn--dark {
