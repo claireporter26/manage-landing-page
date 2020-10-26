@@ -2,15 +2,17 @@ button {
     border-radius: 20px;
     padding: 1em 2.2em;
     border: none;
-    margin: 2em;
+    margin: 2em auto;
     font-weight: 700;
     color: $darkGrayishBlue;
+
+    
 }
 
 .get-started-btn {
     &--dark {
         background-color: $brightOrange;
-        color: #fff;
+        color: $veryLightGray;
     }
 
     &--light {
