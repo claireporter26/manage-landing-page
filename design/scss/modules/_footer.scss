@@ -1,4 +1,56 @@
 footer {
     color: $veryLightGray;
     background-color: $veryDarkBlue;
+    padding: .5em;
+}
+
+.email-signup {
+    margin: 0 auto;
+    width: 90%;
+
+    &_input {
+        width: 70%;
+        margin: auto .5em;
+        border-radius: 20px;
+        padding: .8em 2.2em;
+        color: $darkGrayishBlue;
+    }
+}
+
+.footer_nav-list {
+    margin: 2.2em 3em;
+    display: flex;
+    justify-content: space-between;
+    
+
+
+    &--section {
+        list-style-type: none;
+
+        li {
+            margin: .5rem;
+            font-size: .9rem;
+            color: $veryLightGray;
+        }
+        
+    }
+}
+
+
+
+.copyright, .attribution {
+    font-size: 11px; 
+    text-align: center;
+    color: $darkGrayishBlue;
+
+}
+
+.copyright {
+    margin-bottom: .8em;
+}
+
+.attribution a { 
+    // color: hsl(228, 45%, 44%);
+    color: $veryLightGray; 
+    text-decoration: none;
 }

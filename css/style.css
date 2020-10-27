@@ -21,17 +21,12 @@ img {
   height: auto;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: #3e52a3;
-}
-
 .manage-logo {
   width: 110px;
+}
+
+.manage-logo--footer {
+  width: 200px;
 }
 
 .hamburger-icon {
@@ -41,6 +36,21 @@ img {
 
 .testimonial_image {
   width: 70px;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 3em;
+}
+
+.social-media_icon {
+  width: 30px;
+  height: 30px;
 }
 
 .main-container {
@@ -227,5 +237,54 @@ button {
 footer {
   color: #fafafa;
   background-color: #1d1e25;
+  padding: .5em;
+}
+
+.email-signup {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.email-signup_input {
+  width: 70%;
+  margin: auto .5em;
+  border-radius: 20px;
+  padding: .8em 2.2em;
+  color: #9095a7;
+}
+
+.footer_nav-list {
+  margin: 2.2em 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_nav-list--section {
+  list-style-type: none;
+}
+
+.footer_nav-list--section li {
+  margin: .5rem;
+  font-size: .9rem;
+  color: #fafafa;
+}
+
+.copyright, .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #9095a7;
+}
+
+.copyright {
+  margin-bottom: .8em;
+}
+
+.attribution a {
+  color: #fafafa;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

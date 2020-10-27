@@ -1,5 +1,9 @@
 .manage-logo {
     width: 110px;
+
+    &--footer {
+        width: 200px;
+    }
     
 }
 
@@ -16,6 +20,20 @@
 .testimonial_image {
     width: 70px;
 }
+
+.social-media {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+
+    &_icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
 
 // For the social icons, you can use the icons provided or a font icon library. Some suggestions for font icon libraries can be found below:
 
