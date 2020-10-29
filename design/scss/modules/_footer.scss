@@ -39,7 +39,7 @@ footer {
 
 
 .copyright, .attribution {
-    font-size: 11px; 
+    
     text-align: center;
     color: $darkGrayishBlue;
 
@@ -47,6 +47,11 @@ footer {
 
 .copyright {
     margin-bottom: .8em;
+    font-size: 14px; 
+}
+
+.attribution {
+    font-size: 11px; 
 }
 
 .attribution a { 

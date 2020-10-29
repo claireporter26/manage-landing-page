@@ -14,6 +14,7 @@ body {
   font-size: 16px;
   font-family: 'Be Vietnam', sans-serif;
   color: #242d52;
+  padding-top: 1.2em;
 }
 
 img {
@@ -26,7 +27,9 @@ img {
 }
 
 .manage-logo--footer {
-  width: 200px;
+  width: 170px;
+  margin: 4em auto 3em auto;
+  display: block;
 }
 
 .hamburger-icon {
@@ -34,8 +37,13 @@ img {
   height: 20px;
 }
 
+.intro-illustration {
+  width: 100%;
+  margin-top: 1.2em;
+}
+
 .testimonial_image {
-  width: 70px;
+  width: 765px;
 }
 
 .social-media {
@@ -70,7 +78,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1em .5em;
+  padding: 1em 1em;
 }
 
 nav ul {
@@ -102,7 +110,7 @@ nav li {
 }
 
 .section-header {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.3;
   margin: .5em 0;
@@ -118,11 +126,15 @@ nav li {
 
 .middle-section {
   text-align: left;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 .middle-section_section {
   margin: 3em 0;
+}
+
+.middle-section_3 {
+  margin-bottom: 0;
 }
 
 .middle-section_subtitle {
@@ -146,7 +158,7 @@ nav li {
 }
 
 .testimonial {
-  margin: 3em 0 6em 0;
+  margin: 7.5em 0 6em 0;
   background-color: #fafafa;
   position: relative;
   padding: 3em 1em;
@@ -274,13 +286,17 @@ footer {
 }
 
 .copyright, .attribution {
-  font-size: 11px;
   text-align: center;
   color: #9095a7;
 }
 
 .copyright {
   margin-bottom: .8em;
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 11px;
 }
 
 .attribution a {
