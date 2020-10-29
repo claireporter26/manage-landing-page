@@ -15,7 +15,8 @@ body {
   font-family: 'Be Vietnam', sans-serif;
   color: #242d52;
   padding-top: 1.2em;
-  background: url("./images/avatar-ali.PNG");
+  background-image: url("bg-tablet-pattern.svg");
+  
 }
 
 img {
