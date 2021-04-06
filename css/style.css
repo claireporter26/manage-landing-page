@@ -16,12 +16,11 @@ body {
   color: #242d52;
   padding-top: 1.2em;
   background-image: url("bg-tablet-pattern.svg");
-  
 }
 
 img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .manage-logo {
@@ -71,6 +70,12 @@ img {
 .main-container_smaller {
   width: 85%;
   margin: 0 auto;
+}
+
+.main-container_section-1 {
+  background: url("/images/bg-tablet-pattern-small.svg") no-repeat;
+  background-position-x: -30%;
+  background-position-y: -170%;
 }
 
 nav {
