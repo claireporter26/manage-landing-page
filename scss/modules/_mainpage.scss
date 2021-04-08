@@ -16,18 +16,37 @@
     }
 }
 
-nav {
+// nav {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 1em 1em;
+
+//     ul {
+//        display: none; 
+//     }
+
+//     li {
+//         list-style-type: none;
+//         display: inline-block;
+//     }
+// }
+
+.main-navigation {
     display: flex;
     justify-content: space-between;
     padding: 1em 1em;
 
-    ul {
+    &_ul {
        display: none; 
     }
 
-    li {
+    &_li {
         list-style-type: none;
         display: inline-block;
+    }
+
+    &_toggle-active {
+        display: block;
     }
 }
 

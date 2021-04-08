@@ -78,7 +78,7 @@ img {
   background-position-y: -170%;
 }
 
-nav {
+.main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,13 +88,17 @@ nav {
   padding: 1em 1em;
 }
 
-nav ul {
+.main-navigation_ul {
   display: none;
 }
 
-nav li {
+.main-navigation_li {
   list-style-type: none;
   display: inline-block;
+}
+
+.main-navigation_toggle-active {
+  display: block;
 }
 
 .txt--light {
