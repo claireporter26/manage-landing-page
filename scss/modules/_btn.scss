@@ -5,6 +5,7 @@ button {
     margin: 2em auto;
     font-weight: 700;
     color: $darkGrayishBlue;
+    
 
     
 }
@@ -13,6 +14,7 @@ button {
     &--dark {
         background-color: $brightOrange;
         color: $veryLightGray;
+        box-shadow:  0px 3px 15px -2px $brightOrange;
     }
 
     &--light {
