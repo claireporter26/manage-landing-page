@@ -1,12 +1,16 @@
+
+
 .main-container {
     text-align: center;
     padding: .4em;
+    width: 85%;
+    margin: 0 auto;
     
     
-    &_smaller {
-        width: 85%;
-        margin: 0 auto;
-    }
+    // &_smaller {
+    //     width: 85%;
+    //     margin: 0 auto;
+    // }
 
     &_section-1 {
     background: url("/images/bg-tablet-pattern-small.svg") no-repeat;
@@ -31,28 +35,56 @@
 //     }
 // }
 
+.navigation {
+    position: relative;
+    z-index: 100;
+}
+
 .main-navigation {
     display: flex;
     justify-content: space-between;
     padding: 1em 1em;
+   
 
     &_ul {
        display: none; 
+
+       &_toggle-active {
+           display: block;
+           background-color: white;
+           padding: 1.7rem;
+           
+       }
     }
 
     &_li {
         list-style-type: none;
-        display: inline-block;
+        display: block;
+        padding: .5em 0;
+        font-size: .8rem;
+        font-weight: bold;
+
+        @mixin atMedium {
+            display: inline-block;
+        }
+
+        // &_toggle-active {
+        //     display: block;
+        //     width: 100%;
+        //     color: red;
+        // }
     }
 
-    &_toggle-active {
-        display: block;
-    }
+    // &_toggle-active {
+    //     display: block;
+    // }
 }
 
 .txt--light {
     color: $darkGrayishBlue;
 }
+
+
 
 .header-section {
     margin-bottom: 4em;

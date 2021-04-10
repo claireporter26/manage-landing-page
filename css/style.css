@@ -23,6 +23,23 @@ img {
   max-height: 100%;
 }
 
+.greyed-out {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.9)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+  opacity: .7;
+  z-index: 5;
+}
+
+.greyed-out_toggle-active {
+  visibility: visible;
+}
+
 .manage-logo {
   width: 110px;
 }
@@ -36,11 +53,16 @@ img {
 .hamburger-icon {
   width: 25px;
   height: 18px;
+  z-index: 10;
 }
 
 .intro-illustration {
   width: 100%;
   margin-top: 1.2em;
+}
+
+.intro-illustration_toggle-active {
+  display: none;
 }
 
 .testimonial_image {
@@ -65,9 +87,6 @@ img {
 .main-container {
   text-align: center;
   padding: .4em;
-}
-
-.main-container_smaller {
   width: 85%;
   margin: 0 auto;
 }
@@ -76,6 +95,11 @@ img {
   background: url("/images/bg-tablet-pattern-small.svg") no-repeat;
   background-position-x: -30%;
   background-position-y: -170%;
+}
+
+.navigation {
+  position: relative;
+  z-index: 100;
 }
 
 .main-navigation {
@@ -92,13 +116,18 @@ img {
   display: none;
 }
 
-.main-navigation_li {
-  list-style-type: none;
-  display: inline-block;
+.main-navigation_ul_toggle-active {
+  display: block;
+  background-color: white;
+  padding: 1.7rem;
 }
 
-.main-navigation_toggle-active {
+.main-navigation_li {
+  list-style-type: none;
   display: block;
+  padding: .5em 0;
+  font-size: .8rem;
+  font-weight: bold;
 }
 
 .txt--light {

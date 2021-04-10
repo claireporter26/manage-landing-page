@@ -12,12 +12,17 @@
 .hamburger-icon {
     width: 25px;
     height: 18px;
+    z-index: 10;
     
 }
 
 .intro-illustration {
     width: 100%;
     margin-top: 1.2em;
+
+    &_toggle-active {
+        display: none;
+    }
 }
 
 .testimonial_image {
