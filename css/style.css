@@ -86,15 +86,14 @@ img {
 
 .main-container {
   text-align: center;
-  padding: .4em;
-  width: 85%;
-  margin: 0 auto;
 }
 
 .main-container_section-1 {
   background: url("/images/bg-tablet-pattern-small.svg") no-repeat;
   background-position-x: -30%;
   background-position-y: -170%;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -167,6 +166,7 @@ img {
 .middle-section {
   text-align: left;
   margin-bottom: 2em;
+  padding-left: 1em;
 }
 
 .middle-section_section {
@@ -195,6 +195,8 @@ img {
 
 .testimonials-section {
   text-align: center;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .testimonial {
@@ -279,13 +281,16 @@ button {
 .get-started-btn--dark {
   background-color: #f25f3a;
   color: #fafafa;
-  -webkit-box-shadow: 0px 3px 15px -2px #f25f3a;
-          box-shadow: 0px 3px 15px -2px #f25f3a;
 }
 
 .get-started-btn--light {
   background-color: #fff;
   color: #f25f3a;
+}
+
+.btn_box-shadow {
+  -webkit-box-shadow: 0px 3px 15px -2px #f25f3a;
+          box-shadow: 0px 3px 15px -2px #f25f3a;
 }
 
 footer {

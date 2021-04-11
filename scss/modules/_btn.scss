@@ -14,11 +14,15 @@ button {
     &--dark {
         background-color: $brightOrange;
         color: $veryLightGray;
-        box-shadow:  0px 3px 15px -2px $brightOrange;
+       
     }
 
     &--light {
         background-color: #fff;
         color: $brightOrange;
     }
+}
+
+.btn_box-shadow {
+    box-shadow:  0px 3px 15px -2px $brightOrange;
 }
