@@ -4,6 +4,7 @@ let navListItem = document.querySelectorAll('.main-navigation_li');
 let introImg = document.querySelector('.intro-illustration');
 let body = document.querySelector('.body');
 const greyedOut = document.querySelector('.greyed-out');
+const testimonials = document.querySelectorAll('.testimonial');
 
 
 
@@ -25,7 +26,9 @@ hamburgerIcon.addEventListener("click", function(){
     } else if (hamburgerIcon.src === "http://127.0.0.1:5500/images/icon-close.svg"){
         hamburgerIcon.src = "http://127.0.0.1:5500/images/icon-hamburger.svg" 
     }
-})
+});
+
+
 
 
 
