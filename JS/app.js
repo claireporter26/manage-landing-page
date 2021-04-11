@@ -16,6 +16,15 @@ hamburgerIcon.addEventListener("click", function(){
     // for (let i = 0; i < navListItem.length; i++) {
     //     navListItem[i].classList.toggle('main-navigation_li_toggle-active');
     // }
+
+    // console.log(hamburgerIcon.src)
+
+    if (hamburgerIcon.src === "http://127.0.0.1:5500/images/icon-hamburger.svg"){
+        hamburgerIcon.src = "http://127.0.0.1:5500/images/icon-close.svg"
+        
+    } else if (hamburgerIcon.src === "http://127.0.0.1:5500/images/icon-close.svg"){
+        hamburgerIcon.src = "http://127.0.0.1:5500/images/icon-hamburger.svg" 
+    }
 })
 
 
