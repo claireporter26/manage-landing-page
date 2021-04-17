@@ -55,6 +55,14 @@ img {
   
 }
 
+.flex-lrg {
+
+    @include atMedium {
+        display: flex;
+    }
+    
+}
+
 // .flex {
 //     display: flex;
 
