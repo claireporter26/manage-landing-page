@@ -16,6 +16,13 @@ body {
   color: #242d52;
   padding-top: 1.2em;
   background-image: url("bg-tablet-pattern.svg");
+  text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    text-align: left;
+  }
 }
 
 img {
@@ -45,6 +52,22 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.flex-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media only screen and (min-width: 1000px) {
+  .flex-1 {
+    width: 45%;
   }
 }
 
@@ -98,7 +121,7 @@ img {
   background-position-y: -170%;
   width: 85%;
   margin: 0 auto;
-  text-align: center;
+  text-align: inherit;
 }
 
 .navigation {
@@ -168,6 +191,25 @@ img {
   margin: 3em 0;
 }
 
+.section-2--atsmall {
+  width: 85%;
+  margin: 0 auto;
+  text-align: inherit;
+}
+
+@media only screen and (min-width: 1000px) {
+  .section-2--atsmall {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .section-2--atlarge {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
 .middle-section {
   text-align: left;
   margin-bottom: 2em;
@@ -196,6 +238,13 @@ img {
   background-color: #f25f3a;
   color: #fff;
   margin-right: .5rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .middle-section {
+    width: 45%;
+    margin: 0 auto;
+  }
 }
 
 .testimonials-section {

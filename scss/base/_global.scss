@@ -16,18 +16,23 @@ body {
     color: $darkBlue;
     padding-top: 1.2em;
     background-image: url("bg-tablet-pattern.svg");
+    text-align: center;
+
+    @include atMedium {
+        text-align: left;
+    }
 
    
   
 }
 
-.body {
-    &_toggle-active {
+// .body {
+//     &_toggle-active {
           
         
     
-    }
-}
+//     }
+// }
 
 
 
@@ -59,8 +64,22 @@ img {
 
     @include atMedium {
         display: flex;
+        justify-content:space-between;
     }
     
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-1 {
+
+    @include atMedium {
+        width: 45%;
+        
+    }
+   
 }
 
 // .flex {
