@@ -18,8 +18,9 @@ body {
     background-image: url("bg-tablet-pattern.svg");
     text-align: center;
 
-    @include atMedium {
+    @include atLarge {
         text-align: left;
+        font-size: 20px;
     }
 
    
@@ -62,10 +63,13 @@ img {
 
 .flex-lrg {
 
-    @include atMedium {
+    @include atLarge {
         display: flex;
-        justify-content:space-between;
+        justify-content:space-around;
+        
     }
+
+
     
 }
 
@@ -73,9 +77,19 @@ img {
     flex-direction: row-reverse;
 }
 
+.flex-center {
+
+    @include atLarge {
+        align-items: center;
+
+    }
+    
+    
+}
+
 .flex-1 {
 
-    @include atMedium {
+    @include atLarge {
         width: 45%;
         
     }

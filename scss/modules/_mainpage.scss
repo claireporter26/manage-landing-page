@@ -66,7 +66,7 @@
         font-size: .8rem;
         font-weight: bold;
 
-        @mixin atMedium {
+        @mixin atLarge {
             display: inline-block;
         }
 
@@ -91,15 +91,34 @@
 .header-section {
     margin-bottom: 4em;
 
+    
+    @include atLarge {
+        margin-bottom: 0; 
+        font-size: auto;
+         
+    }
+
     &_title {
         font-size: 2.3rem;
         font-weight: 700;
         line-height: 1.3;
         margin: .3em 0;
+
+        // @include atLarge {
+        //     font-size: 3rem; 
+        // }
+
+        
     }
 
     &_para {
+
         font-size: 1rem;
+
+        @include atLarge {
+            font-size: auto;
+        }
+        
     }
 
 
@@ -111,8 +130,16 @@
     line-height: 1.3;
     margin: .5em 0;
 
+    @include atLarge {
+        font-size: auto;
+    }
+
     &_para{
         font-size: .9rem;
+
+        @include atLarge {
+            font-size: auto;
+        }
     }
 }
 
@@ -130,14 +157,14 @@
     margin: 0 auto;
     text-align: inherit;
 
-    @include atMedium {
+    @include atLarge {
         width: 45%;
     }
 
 }
 
 .section-2--atlarge {
-    @include atMedium {
+    @include atLarge {
         width: 85%;
         margin: 0 auto;
     }
@@ -165,6 +192,10 @@
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
 
+        @include atLarge {
+            background-color: inherit;
+        }
+
         
     }
 
@@ -177,12 +208,14 @@
         
     }
 
-    @include atMedium {
+    @include atLarge {
         width: 45%;
         margin: 0 auto;
     }
    
 }
+
+//testimonial section
 
 .testimonials-section {
     text-align: center;
@@ -249,7 +282,7 @@
     padding: 4.5em 0;
 
     &_content {
-    text-align: center;
+        text-align: center;
     }
 
     &_header {
