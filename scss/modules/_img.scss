@@ -1,5 +1,6 @@
 .manage-logo {
     width: 110px;
+    align-self: center;
 
     &--footer {
         width: 170px;
@@ -16,6 +17,7 @@
 
     @include atLarge {
         display: none;
+        // flex-grow: 0;
     }
     
 }

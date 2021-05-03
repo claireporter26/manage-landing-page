@@ -1,4 +1,5 @@
 const hamburgerIcon = document.querySelector('.hamburger-icon');
+let navListContainer = document.querySelector('.main-navigation--lrg')
 let navList = document.querySelector('.main-navigation_ul');
 let navListItem = document.querySelectorAll('.main-navigation_li');
 let introImg = document.querySelector('.intro-illustration');
@@ -10,6 +11,7 @@ const testimonials = document.querySelectorAll('.testimonial');
 
 hamburgerIcon.addEventListener("click", function(){
     navList.classList.toggle('main-navigation_ul_toggle-active')
+    // navListContainer.classList.toggle('main-navigation--lrg_toggle-active')
     introImg.classList.toggle('intro-illustration_toggle-active')
     greyedOut.classList.toggle('greyed-out_toggle-active')
     

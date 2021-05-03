@@ -37,22 +37,28 @@
 //     }
 // }
 
-.navigation {
+// .main-navigation {
+//     position: relative;
+//     z-index: 100;
+    
+
+//     @include atLarge {
+//         display: flex;
+//         justify-content: space-evenly;
+//     }
+    
+// }
+
+.main-navigation {
     position: relative;
     z-index: 100;
-    
+  
+    padding: 1em 1em;
 
     @include atLarge {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
-    
-}
-
-.main-navigation {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 1em;
    
 
     &_ul {
@@ -60,12 +66,16 @@
 
        @include atLarge {
            display: flex;
+           flex-grow: 1;
+           align-self: center;
+           
        }
 
        &_toggle-active {
            display: block;
            background-color: white;
            padding: 1.7rem;
+           margin-top: 5em;
            
        }
     }
@@ -74,11 +84,26 @@
         list-style-type: none;
         display: block;
         padding: .5em 0;
-        font-size: .8rem;
+        font-size: .9rem;
         font-weight: bold;
+        cursor: pointer;
 
-        @mixin atLarge {
+        @include atLarge {
+            
             display: inline-block;
+            padding: 1em 1.5em;
+            font-size: 1.2rem;
+
+            &:hover {
+                opacity: .6;
+            }
+
+
+            // &:last-child {
+            //     display: none;
+            // }
+            
+
         }
 
         // &_toggle-active {
@@ -87,6 +112,28 @@
         //     color: red;
         // }
     }
+
+    &--sm {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    // &--lrg {
+    //     display: none;
+
+    //     @include atLarge {
+    //         display: flex;
+    //         // flex-grow: 2;
+    //     }
+
+    //     &_toggle-active {
+    //         display: block;
+    //         background-color: white;
+    //         padding: 1.7rem;
+            
+    //     }
+    // }
 
     // &_toggle-active {
     //     display: block;
