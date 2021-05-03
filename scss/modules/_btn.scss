@@ -21,6 +21,14 @@ button {
         background-color: #fff;
         color: $brightOrange;
     }
+
+    &--nav {
+        display: none;
+
+        @include atLarge {
+            display: inline-block;
+        };
+    }
 }
 
 .btn_box-shadow {

@@ -40,6 +40,13 @@
 .navigation {
     position: relative;
     z-index: 100;
+    
+
+    @include atLarge {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
 }
 
 .main-navigation {
@@ -50,6 +57,10 @@
 
     &_ul {
        display: none; 
+
+       @include atLarge {
+           display: flex;
+       }
 
        &_toggle-active {
            display: block;
