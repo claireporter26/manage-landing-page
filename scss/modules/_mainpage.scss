@@ -152,7 +152,7 @@
     
     @include atLarge {
         margin-bottom: 0; 
-        font-size: auto;
+        // font-size: auto;
          
     }
 
@@ -163,7 +163,7 @@
         margin: .3em 0;
 
         // @include atLarge {
-        //     font-size: 3rem; 
+        //     font-size: 3.2rem; 
         // }
 
         
@@ -189,7 +189,7 @@
     margin: .5em 0;
 
     @include atLarge {
-        font-size: auto;
+        // font-size: auto;
     }
 
     &_para{
@@ -232,6 +232,7 @@
     text-align: left;
     margin-bottom: 2em;
     padding-left: 1em;
+    font-size: .9rem;
 
     &_section {
         margin: 3em 0;
@@ -269,6 +270,7 @@
     @include atLarge {
         width: 45%;
         margin: 0 auto;
+
     }
    
 }
@@ -289,6 +291,7 @@
     padding: 3em 1em;
     text-align: center;
     font-size: .9rem;
+    max-width: 850px;
 
     &_image {
         position: absolute;

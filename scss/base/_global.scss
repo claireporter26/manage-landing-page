@@ -4,13 +4,21 @@
     margin: 0;
 }
 
+html {
+    @include atLarge {
+        
+        font-size: 25px;
+    }
+}
+
 body, html {
     height: 100%;
-    line-height: 1.7;
+    
 }
 
 body {
     font-size: 16px;
+    line-height: 1.7;
     font-family: 'Be Vietnam', sans-serif;
     //font Be Vietnam, Weights: 400, 500, 700
     color: $darkBlue;
@@ -20,7 +28,7 @@ body {
 
     @include atLarge {
         text-align: left;
-        font-size: 20px;
+        font-size: 40px;
     }
 
    

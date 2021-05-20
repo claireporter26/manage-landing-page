@@ -5,13 +5,19 @@
   margin: 0;
 }
 
+@media only screen and (min-width: 1000px) {
+  html {
+    font-size: 25px;
+  }
+}
+
 body, html {
   height: 100%;
-  line-height: 1.7;
 }
 
 body {
   font-size: 16px;
+  line-height: 1.7;
   font-family: 'Be Vietnam', sans-serif;
   color: #242d52;
   padding-top: 1.2em;
@@ -22,7 +28,7 @@ body {
 @media only screen and (min-width: 1000px) {
   body {
     text-align: left;
-    font-size: 20px;
+    font-size: 40px;
   }
 }
 
@@ -225,7 +231,6 @@ img {
 @media only screen and (min-width: 1000px) {
   .header-section {
     margin-bottom: 0;
-    font-size: auto;
   }
 }
 
@@ -251,12 +256,6 @@ img {
   font-weight: 700;
   line-height: 1.3;
   margin: .5em 0;
-}
-
-@media only screen and (min-width: 1000px) {
-  .section-header {
-    font-size: auto;
-  }
 }
 
 .section-header_para {
@@ -296,6 +295,7 @@ img {
   text-align: left;
   margin-bottom: 2em;
   padding-left: 1em;
+  font-size: .9rem;
 }
 
 .middle-section_section {
@@ -346,6 +346,7 @@ img {
   padding: 3em 1em;
   text-align: center;
   font-size: .9rem;
+  max-width: 850px;
 }
 
 .testimonial_image {
