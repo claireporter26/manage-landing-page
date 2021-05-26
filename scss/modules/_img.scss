@@ -35,6 +35,26 @@
     width: 75px;
 }
 
+.social-media_icon-container {
+    
+    height: 34px;
+    width: 34px;
+    display: flex;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+        
+
+        
+    }
+
+    &:hover .social-media_icon--hover {
+        display: flex;
+        
+    }
+}
+
 .social-media {
 
     display: flex;
@@ -44,6 +64,31 @@
     &_icon {
         width: 30px;
         height: 30px;
+        position: absolute;
+        top: 2px;
+        bottom: 2px;
+        left: 2px;
+        right: 2px;
+       
+
+
+
+
+        &--hover {
+            display: none;
+            z-index: 100;
+             position: absolute;
+             top: 2px;
+             bottom: 2px;
+             left: 2px;
+             right: 2px;
+        }
+
+        
+
+        
+
+       
     }
 }
 
