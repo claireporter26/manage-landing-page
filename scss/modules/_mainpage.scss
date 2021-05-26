@@ -276,6 +276,12 @@
 }
 
 //testimonial section
+.testimonials-section{padding:50px 0;overflow:hidden;white-space:wrap;}
+.cycle-slideshow .testimonial{width:100%;height:auto;}
+.cycle-slideshow  div{float:none;}
+
+/*If using Jquery Enhanced*/
+// .cycle-carousel-wrap{top:0 !important;} 
 
 .testimonials-section {
     text-align: center;
@@ -283,16 +289,16 @@
     min-height: 700px;
   
 
-    &_items {
-        display: flex;
-        overflow: hidden;
-        position: absolute;
+    // &_items {
+    //     display: flex;
+    //     overflow: hidden;
+    //     position: absolute;
 
-        @include atLarge {
-            left: -240px;
-        }
+    //     @include atLarge {
+    //         left: -240px;
+    //     }
         
-    }
+    // }
 
 
     // width: 85%;

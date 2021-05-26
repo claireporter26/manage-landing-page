@@ -370,23 +370,25 @@ img {
 }
 
 .testimonials-section {
+  padding: 50px 0;
+  overflow: hidden;
+  white-space: wrap;
+}
+
+.cycle-slideshow .testimonial {
+  width: 100%;
+  height: auto;
+}
+
+.cycle-slideshow div {
+  float: none;
+}
+
+/*If using Jquery Enhanced*/
+.testimonials-section {
   text-align: center;
   position: relative;
   min-height: 700px;
-}
-
-.testimonials-section_items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  position: absolute;
-}
-
-@media only screen and (min-width: 1000px) {
-  .testimonials-section_items {
-    left: -240px;
-  }
 }
 
 .testimonial {
