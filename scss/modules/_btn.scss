@@ -1,23 +1,31 @@
 button {
-    border-radius: 10px;
-    // padding: 1em 2.2em;
+    border-radius: 30px;
+    padding: 1.2em 2.2em;
     border: none;
-    // margin: 2em auto;
+    margin: 2em auto;
     font-weight: 700;
     color: $darkGrayishBlue;
-    font-size: 1rem; 
-
-    
-
-    
-}
-
-button:hover{
-    opacity: .7;
+    font-size: .8rem; 
     cursor: pointer;
+
+    &:hover {
+        opacity: .8;
+    }
+    
+
+    
+    
+
+    
 }
+
+
+
+
 
 .get-started-btn {
+
+   
 
 
     &--dark {

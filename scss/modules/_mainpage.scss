@@ -88,15 +88,17 @@
         font-weight: bold;
         cursor: pointer;
 
+        &:hover {
+            opacity: .6;
+        }
+
         @include atLarge {
             
             display: inline-block;
             padding: 1em 1.5em;
             font-size: 1.2rem;
 
-            &:hover {
-                opacity: .6;
-            }
+            
 
 
             // &:last-child {
@@ -284,7 +286,7 @@
 // .cycle-carousel-wrap{top:0 !important;} 
 .swiper-container {
     width: 100%;
-    height: 100&;
+    height: 100%;
     
    
   }
@@ -320,16 +322,18 @@
 }
 
 .testimonial {
-    margin: 7.5em 0.5em 6em .5em;
+    margin: 7.5em auto 3em auto;
     // margin: 7.5em auto 6em auto;
     background-color: $veryLightGray;
     position: relative;
     padding: 2em 1em;
     text-align: center;
     font-size: .9rem;
-    max-width: 590px;
-    // min-width: 550px;
-    max-height: 400px;
+    max-width: 550px;
+    min-height: 200px;
+    // // min-width: 550px;
+
+    // max-height: 400px;
 
     &_image {
         position: absolute;

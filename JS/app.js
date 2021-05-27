@@ -43,10 +43,12 @@ $(document).ready(function(){
 
 const swiper = new Swiper('.swiper-container', {
     spaceBetween: 20,
-    slidesPerView: 3,
+
+    
+    slidesPerView: 'auto',
     allowTouchMove: true,
     
-    // centeredSlides: true,
+    centeredSlides: true,
     loop: true,
     autoplay: {
       delay: 3500,
