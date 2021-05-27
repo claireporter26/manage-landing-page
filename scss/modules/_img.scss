@@ -2,6 +2,10 @@
     width: 110px;
     align-self: center;
 
+    @include atLarge {
+        width: 130px;
+    }
+
     &--footer {
         width: 170px;
         margin: 4em auto 3em auto;
