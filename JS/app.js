@@ -19,7 +19,48 @@ $(document).ready(function(){
 
 });
 
+// const swiper = new Swiper('.swiper-container', {
+//     // Optional parameters
+//     // direction: 'vertical',
+//     loop: true,
+  
+//     // If we need pagination
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
+  
+//     // Navigation arrows
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+  
+//     // And if we need scrollbar
+//     scrollbar: {
+//       el: '.swiper-scrollbar',
+//     },
+// });
 
+const swiper = new Swiper('.swiper-container', {
+    spaceBetween: 20,
+    slidesPerView: 3,
+    allowTouchMove: true,
+    
+    // centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
 
 // const hamburgerIcon = document.querySelector('.hamburger-icon');

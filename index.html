@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -118,13 +119,85 @@
     
     <!-- <div class="main-container_section-narrow"> -->
     <div class="main-container_section"></div>
+  
       <div class="testimonials-section">
         <h2 class="section-header">What they’ve said</h2>
         <!-- <div class="container"> -->
           
-            <div class="testimonials-section_items cycle-slideshow row" data-cycle-fx=carousel data-cycle-timeout=1000 data-cycle-carousel-visible=3 data-cycle-carousel-fluid=true data-cycle-slides="div">
+          <!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide testimonial testimonial_1">
+      <img class="testimonial_image" src="./images/avatar-anisha.png" alt="Anisha Li">
+      <h4 class="testimonial_name">Anisha Li</h4>
+      <p class="txt--light"> “Manage has supercharged our team’s workflow. The ability to maintain 
+        visibility on larger milestones at all times keeps everyone motivated.”
+      </p>
+      <!-- <div class="testimonial_activeIcon-section">
+        <div class="testimonial_indicator-icon testimonial_indicator-icon--active"></div>
+        <div class="testimonial_indicator-icon"></div>
+        <div class="testimonial_indicator-icon"></div>
+        <div class="testimonial_indicator-icon"></div>
+      </div> -->
+    </div>
+    <div class="swiper-slide testimonial testimonial_2">
+      <img class="testimonial_image" src="./images/avatar-ali.png" alt=" Ali Bravo">
+        <h4 class="testimonial_name"> Ali Bravo</h4>
+        <p class="txt--light">  “We have been able to cancel so many other subscriptions since using 
+          Manage. There is no more cross-channel confusion and everyone is much 
+          more focused.”
+        </p>
+        <!-- <div class="testimonial_activeIcon-section">
+          <div class="testimonial_indicator-icon"></div>
+          <div class="testimonial_indicator-icon testimonial_indicator-icon--active"></div>
+          <div class="testimonial_indicator-icon"></div>
+          <div class="testimonial_indicator-icon"></div>
+        </div> -->
+    </div>
+    <div class="swiper-slide testimonial testimonial_3">
+      <img class="testimonial_image" src="./images/avatar-richard.png" alt="Richard Watts">
+      <h4 class="testimonial_name">Richard Watts</h4>
+      <p class="txt--light">  “Manage allows us to provide structure and process. It keeps us organized 
+        and focused. I can’t stop recommending them to everyone I talk to!”
+      </p>
+      <!-- <div class="testimonial_activeIcon-section">
+        <div class="testimonial_indicator-icon"></div>
+        <div class="testimonial_indicator-icon"></div>
+        <div class="testimonial_indicator-icon testimonial_indicator-icon--active"></div>
+        <div class="testimonial_indicator-icon"></div>
+      </div> -->
+    </div>
+    <div class="swiper-slide testimonial testimonial_4">
+      <img class="testimonial_image" src="./images/avatar-shanai.png" alt="Shanai Gough">
+      <h4 class="testimonial_name">Shanai Gough</h4>
+      <p class="txt--light"> “Their software allows us to track, manage and collaborate on our projects 
+        from anywhere. It keeps the whole team in-sync without being intrusive.”
+      </p>
+      <!-- <div class="testimonial_activeIcon-section">
+        <div class="testimonial_indicator-icon"></div>
+        <div class="testimonial_indicator-icon"></div>
+        <div class="testimonial_indicator-icon"></div>
+        <div class="testimonial_indicator-icon testimonial_indicator-icon--active"></div>
+      </div> -->
+    </div>
+    
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
 
-              <!-- <div class="col-xs-2 testimonial testimonial_4">
+  <!-- If we need navigation buttons -->
+  <!-- <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> -->
+
+  <!-- If we need scrollbar -->
+  <!-- <div class="swiper-scrollbar"></div> -->
+</div>
+
+            <!-- <div class="testimonials-section_items cycle-slideshow row" data-cycle-fx=carousel data-cycle-timeout=1000 data-cycle-carousel-visible=3 data-cycle-carousel-fluid=true data-cycle-slides="div">
+
+               <div class="col-xs-2 testimonial testimonial_4">
                 <img class="testimonial_image" src="./images/avatar-shanai.png" alt="Shanai Gough">
                 <h4 class="testimonial_name">Shanai Gough</h4>
                 <p class="txt--light"> “Their software allows us to track, manage and collaborate on our projects 
@@ -138,7 +211,7 @@
                 </div>
               </div> -->
             
-              <div class="col-xl-3 testimonial testimonial_1">
+              <!-- <div class="col-xl-3 testimonial testimonial_1">
                 <img class="testimonial_image" src="./images/avatar-anisha.png" alt="Anisha Li">
                 <h4 class="testimonial_name">Anisha Li</h4>
                 <p class="txt--light"> “Manage has supercharged our team’s workflow. The ability to maintain 
@@ -194,7 +267,7 @@
                   <div class="testimonial_indicator-icon testimonial_indicator-icon--active"></div>
                 </div>
               </div>
-            </div>
+            </div> --> 
           
         <!-- </div> -->
         <button class="button get-started-btn--dark btn_box-shadow">Get Started</button>
@@ -265,8 +338,8 @@
     </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./JS/app.js"></script>
 </body>
 </html>
