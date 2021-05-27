@@ -5,6 +5,26 @@
 }
 
 html {
+
+    // background-image: url("bg-tablet-pattern.svg");
+    background: url("/images/bg-tablet-pattern-small.svg") no-repeat -90% -50%;
+    // background-repeat: no-repeat;
+    // // background-repeat: space;
+    // // background-position: absolute;
+    // background-position-x: -90%;
+    // background-position-y: -50%;
+    // // top: -1000px;
+    // right: -500px;
+    background-size: 450px;
+
+    // background: url("/images/bg-tablet-pattern-small.svg") no-repeat -98% 60%;
+    
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+    
+
     @include atLarge {
         
         font-size: 20px;
@@ -23,7 +43,7 @@ body {
     //font Be Vietnam, Weights: 400, 500, 700
     color: $darkBlue;
     padding-top: 1.2em;
-    background-image: url("bg-tablet-pattern.svg");
+    
     text-align: center;
 
     @include atLarge {
