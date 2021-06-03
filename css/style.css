@@ -89,6 +89,19 @@ img {
   }
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .manage-logo {
   width: 110px;
   -ms-flex-item-align: center;
@@ -106,6 +119,12 @@ img {
   width: 170px;
   margin: 4em auto 3em auto;
   display: block;
+}
+
+@media only screen and (min-width: 1000px) {
+  .manage-logo--footer {
+    margin: auto;
+  }
 }
 
 .hamburger-icon {
@@ -160,6 +179,12 @@ img {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .social-media {
+    margin-bottom: 0;
+  }
 }
 
 .social-media_icon {
@@ -301,11 +326,18 @@ img {
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .section {
+    margin-top: 6rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .section-header {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.3;
-  margin: 2em 0 0 0;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -351,7 +383,7 @@ img {
 @media only screen and (min-width: 1000px) {
   .section-2--atlarge {
     width: 85%;
-    margin: 0 auto;
+    margin-top: 3rem;
   }
 }
 
@@ -463,7 +495,13 @@ img {
 
 .getstarted-section {
   background-color: #f25f3a;
-  padding: 4.5em 0;
+  padding: 4.5em auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .getstarted-section {
+    padding: 1.5em 0;
+  }
 }
 
 .getstarted-section_content {
@@ -474,6 +512,13 @@ img {
   font-size: 2.5rem;
   line-height: 1.3;
   color: #fff;
+  max-width: 600px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .getstarted-section_header {
+    text-align: left;
+  }
 }
 
 button {
@@ -485,6 +530,10 @@ button {
   color: #9095a7;
   font-size: .8rem;
   cursor: pointer;
+  display: inline-block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 button:hover {
@@ -513,6 +562,10 @@ button:hover {
   }
 }
 
+.get-started-btn--no-right-margin {
+  margin-right: 0;
+}
+
 .btn_box-shadow {
   -webkit-box-shadow: 0px 3px 15px -2px #f25f3a;
           box-shadow: 0px 3px 15px -2px #f25f3a;
@@ -522,18 +575,67 @@ footer {
   color: #fafafa;
   background-color: #1d1e25;
   padding: .5em;
+  position: relative;
+}
+
+.footer--large {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer--large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin: 0 auto;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer--large_section1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .email-signup {
   margin: 0 auto;
   width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (min-width: 1000px) {
+  .email-signup {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 .email-signup_input {
   width: 70%;
   margin: auto .5em;
-  border-radius: 20px;
-  padding: .8em 2.2em;
+  border-radius: 25px;
+  padding: 1em 2.2em;
   color: #9095a7;
   cursor: pointer;
 }
@@ -562,6 +664,12 @@ footer {
 .footer_nav-list--section li:hover {
   color: #f25f3a;
   cursor: pointer;
+}
+
+.legal {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
 }
 
 .copyright, .attribution {

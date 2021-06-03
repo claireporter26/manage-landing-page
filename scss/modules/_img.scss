@@ -10,6 +10,10 @@
         width: 170px;
         margin: 4em auto 3em auto;
         display: block;
+
+        @include atLarge {
+            margin: auto;
+        }
     }
     
 }
@@ -64,6 +68,10 @@
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 3em;
+
+    @include atLarge {
+        margin-bottom: 0;
+    }
 
     &_icon {
         width: 30px;

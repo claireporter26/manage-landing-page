@@ -7,6 +7,8 @@ button {
     color: $darkGrayishBlue;
     font-size: .8rem; 
     cursor: pointer;
+    display: inline-block;
+    align-self: center;
 
     &:hover {
         opacity: .8;
@@ -48,6 +50,10 @@ button {
             align-self: flex-start;
             
         };
+    }
+
+    &--no-right-margin {
+        margin-right: 0;
     }
 }
 

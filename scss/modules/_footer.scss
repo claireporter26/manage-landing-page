@@ -2,19 +2,61 @@ footer {
     color: $veryLightGray;
     background-color: $veryDarkBlue;
     padding: .5em;
+    position: relative;
 }
+
+.footer--large {
+
+    flex-direction: column;
+
+    @include atLarge {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        height: min-content;
+    }
+
+    &_section1 {
+        
+        @include atLarge {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            // height: min-content;
+            
+            
+        }
+        
+    }
+}
+
+.footer_logo {
+    // flex-basis: 1;
+}
+
+
 
 .email-signup {
     margin: 0 auto;
     width: 90%;
+    justify-content: space-between;
+
+    @include atLarge {
+        align-self: flex-start;
+    }
 
     &_input {
         width: 70%;
         margin: auto .5em;
-        border-radius: 20px;
-        padding: .8em 2.2em;
+        border-radius: 25px;
+        padding: 1em 2.2em;
         color: $darkGrayishBlue;
         cursor: pointer;
+
+        @include atLarge {
+            
+            
+        }
     }
 }
 
@@ -43,7 +85,22 @@ footer {
     }
 }
 
+.social-media {
+    // flex-basis: 1;
+}
 
+.legal {
+    // position: absolute;
+    // bottom: 0;
+    // right: 0;
+    order: 5;
+
+    @include atLarge {
+        
+    }
+    
+    // display: inline;
+}
 
 .copyright, .attribution {
     

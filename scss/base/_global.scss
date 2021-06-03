@@ -124,13 +124,13 @@ img {
    
 }
 
-// .flex {
-//     display: flex;
+.flex {
+    display: flex;
 
-//     &-reverse {
-//         flex-direction: row-reverse;
-//     }
-// }
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+}
 
 
 //footer
