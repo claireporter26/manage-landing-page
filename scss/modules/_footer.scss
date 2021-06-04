@@ -12,8 +12,18 @@ footer {
     @include atLarge {
         display: flex;
         flex-direction: row-reverse;
-        margin: 0 auto;
-        height: min-content;
+        justify-content: center;
+        margin: 1rem auto;
+        // height: min-content;
+    }
+
+    &_section {
+
+        @include atLarge {
+            padding: .5rem auto;
+            margin: .5rem 4rem;
+        };
+        
     }
 
     &_section1 {
@@ -21,12 +31,26 @@ footer {
         @include atLarge {
             display: flex;
             flex-direction: column-reverse;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            flex-basis: 1;
+            // margin: .5rem;
             // height: min-content;
             
             
         }
         
+    }
+
+    &_section2 {
+        flex-basis: 2;
+    }
+    
+    &_section3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-basis: 1;
     }
 }
 
@@ -43,6 +67,8 @@ footer {
 
     @include atLarge {
         align-self: flex-start;
+        height: 30%;
+        
     }
 
     &_input {
@@ -52,9 +78,11 @@ footer {
         padding: 1em 2.2em;
         color: $darkGrayishBlue;
         cursor: pointer;
+        align-self: center;
 
         @include atLarge {
-            
+            margin-top: auto;
+            margin-bottom: auto;
             
         }
     }
@@ -65,16 +93,28 @@ footer {
     display: flex;
     justify-content: space-between;
     text-align: left;
+    // margin-right: 10rem;
+
+    @include atLarge {
+        // margin: 0 4rem;
+        
+        
+            
+        
+    }
     
 
 
     &--section {
         list-style-type: none;
+        
+
 
         li {
             margin: .5rem;
             font-size: .9rem;
             color: $veryLightGray;
+
 
             &:hover {
                 color: $brightOrange;
@@ -93,11 +133,25 @@ footer {
     // position: absolute;
     // bottom: 0;
     // right: 0;
-    order: 5;
+    // order: 5;
 
-    @include atLarge {
-        
+    &--sm {
+        display: block;
+
+        @include atLarge {
+            display: none;
+        }
     }
+
+    &--lg {
+        display: none;
+
+        @include atLarge {
+            display: block;
+            height: 30%;
+        }
+    }
+    
     
     // display: inline;
 }
