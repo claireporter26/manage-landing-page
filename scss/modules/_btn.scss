@@ -52,6 +52,8 @@ button {
         };
     }
 
+   
+
     &--no-right-margin {
         margin-right: 0;
     }
@@ -63,6 +65,16 @@ button {
     // &--no-bottom-margin {
     //     margin-bottom: 0;
     // }
+}
+
+.footer-btn {
+
+    @include atLarge {
+        // margin-top: 2rem;
+        margin: auto;
+        align-self: center;
+    }
+    
 }
 
 .btn_box-shadow {

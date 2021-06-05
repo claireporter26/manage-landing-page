@@ -124,6 +124,7 @@ img {
 @media only screen and (min-width: 1000px) {
   .manage-logo--footer {
     margin: auto;
+    margin-top: 2rem;
   }
 }
 
@@ -171,6 +172,12 @@ img {
   display: flex;
 }
 
+@media only screen and (min-width: 1000px) {
+  .social-media_icon-container {
+    margin-bottom: 2rem;
+  }
+}
+
 .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,6 +191,7 @@ img {
 @media only screen and (min-width: 1000px) {
   .social-media {
     margin-bottom: 0;
+    min-width: 250px;
   }
 }
 
@@ -331,6 +339,9 @@ img {
     margin-top: 6rem;
     margin-right: auto;
     margin-left: auto;
+  }
+  .section_1 {
+    margin-top: 0;
   }
 }
 
@@ -566,6 +577,15 @@ button:hover {
   margin-right: 0;
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer-btn {
+    margin: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .btn_box-shadow {
   -webkit-box-shadow: 0px 3px 15px -2px #f25f3a;
           box-shadow: 0px 3px 15px -2px #f25f3a;
@@ -594,9 +614,9 @@ footer {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 1rem auto;
   }
 }
@@ -604,7 +624,7 @@ footer {
 @media only screen and (min-width: 1000px) {
   .footer--large_section {
     padding: .5rem auto;
-    margin: .5rem 4rem;
+    margin: .5rem auto;
   }
 }
 
@@ -653,18 +673,27 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (min-width: 1000px) {
   .email-signup {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 30%;
+    margin-top: 2rem;
   }
 }
 
 .email-signup_input {
   width: 70%;
+  min-width: 250px;
   margin: auto .5em;
   border-radius: 25px;
   padding: 1em 2.2em;
@@ -693,8 +722,29 @@ footer {
   text-align: left;
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer_nav-list {
+    margin: 2rem 1.5rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .footer_nav-list--section {
   list-style-type: none;
+  min-width: 4em;
+  margin: auto 1em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer_nav-list--section {
+    height: 100%;
+  }
+}
+
+.footer_nav-list--section1 {
+  margin-right: 3em;
 }
 
 .footer_nav-list--section li {
@@ -703,9 +753,26 @@ footer {
   color: #fafafa;
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer_nav-list--section li {
+    font-size: .7rem;
+  }
+}
+
 .footer_nav-list--section li:hover {
   color: #f25f3a;
   cursor: pointer;
+}
+
+.legal {
+  font-size: .5rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .legal {
+    text-align: right;
+  }
 }
 
 .legal--sm {
@@ -720,17 +787,25 @@ footer {
 
 .legal--lg {
   display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media only screen and (min-width: 1000px) {
   .legal--lg {
-    display: block;
-    height: 30%;
+    margin-bottom: 2rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
 .copyright, .attribution {
-  text-align: center;
   color: #9095a7;
 }
 
@@ -739,8 +814,20 @@ footer {
   font-size: 14px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .copyright {
+    font-size: inherit;
+  }
+}
+
 .attribution {
   font-size: 11px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .attribution {
+    font-size: inherit;
+  }
 }
 
 .attribution a {
