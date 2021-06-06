@@ -100,10 +100,11 @@ footer {
     justify-content: space-between;
     text-align: left;
     // margin-right: 10rem;
+    align-items: flex-start;
 
     @include atLarge {
         margin: 2rem 1.5rem;
-        align-items: flex-start;
+        
 
         
         
@@ -116,7 +117,10 @@ footer {
     &--section {
         list-style-type: none;
         min-width: 4em;
-        margin: auto 1em;
+        margin: 0 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         
         @include atLarge {
             height: 100%;
@@ -175,12 +179,12 @@ footer {
 
     &--lg {
         display: none;
-        display: flex;
+        
         flex-direction: column;
 
         @include atLarge {
             
-            
+            display: flex;
             // height: 30%;
             margin-bottom: 2rem;
             justify-content: flex-end;

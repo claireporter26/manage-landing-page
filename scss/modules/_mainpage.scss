@@ -110,7 +110,9 @@
             // }
             
 
-        }
+        } 
+
+        
 
         // &_toggle-active {
         //     display: block;
@@ -118,6 +120,7 @@
         //     color: red;
         // }
     }
+
 
     &--sm {
         display: flex;
@@ -373,7 +376,7 @@
     padding: 2em 1em;
     text-align: center;
     font-size: .9rem;
-    max-width: 550px;
+    max-width: 500px;
     min-height: 200px;
     // // min-width: 550px;
 
@@ -434,14 +437,18 @@
 
 .getstarted-section {
     background-color: $brightOrange;
-    padding: 4.5em auto;
+    // padding: 4.5em auto;
 
     @include atLarge {
-        padding: 1.5em 0;
+        // padding: 1.5em 0;
+        background-image: url("/images/bg-simplify-section-desktop");
+       
+        
     }
 
     &_content {
         text-align: center;
+        padding: 2em 0;
     }
 
     &_header {

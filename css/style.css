@@ -5,9 +5,9 @@
   margin: 0;
 }
 
-html {
-  background: url("/images/bg-tablet-pattern-small.svg") no-repeat -90% -50%;
-  background-size: 450px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -27,6 +27,13 @@ body {
   color: #242d52;
   padding-top: 1.2em;
   text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background: url("/images/bg-tablet-pattern.svg") no-repeat 120% -150%, url("/images/bg-tablet-pattern.svg") no-repeat -60% 3000%;
+    background-size: 800px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -471,7 +478,7 @@ img {
   padding: 2em 1em;
   text-align: center;
   font-size: .9rem;
-  max-width: 550px;
+  max-width: 500px;
   min-height: 200px;
 }
 
@@ -506,17 +513,17 @@ img {
 
 .getstarted-section {
   background-color: #f25f3a;
-  padding: 4.5em auto;
 }
 
 @media only screen and (min-width: 1000px) {
   .getstarted-section {
-    padding: 1.5em 0;
+    background-image: url("/images/bg-simplify-section-desktop");
   }
 }
 
 .getstarted-section_content {
   text-align: center;
+  padding: 2em 0;
 }
 
 .getstarted-section_header {
@@ -720,21 +727,31 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media only screen and (min-width: 1000px) {
   .footer_nav-list {
     margin: 2rem 1.5rem;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
 }
 
 .footer_nav-list--section {
   list-style-type: none;
   min-width: 4em;
-  margin: auto 1em;
+  margin: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -787,9 +804,6 @@ footer {
 
 .legal--lg {
   display: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -798,6 +812,9 @@ footer {
 
 @media only screen and (min-width: 1000px) {
   .legal--lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-bottom: 2rem;
     -webkit-box-pack: end;
         -ms-flex-pack: end;

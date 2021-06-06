@@ -4,10 +4,15 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 html {
 
     // background-image: url("bg-tablet-pattern.svg");
-    background: url("/images/bg-tablet-pattern-small.svg") no-repeat -90% -50%;
+    
     // background-repeat: no-repeat;
     // // background-repeat: space;
     // // background-position: absolute;
@@ -15,7 +20,7 @@ html {
     // background-position-y: -50%;
     // // top: -1000px;
     // right: -500px;
-    background-size: 450px;
+   
 
     // background: url("/images/bg-tablet-pattern-small.svg") no-repeat -98% 60%;
     
@@ -37,6 +42,14 @@ body, html {
 }
 
 body {
+    // background: url("/images/bg-tablet-pattern.svg") no-repeat -90% -50%;
+
+    @include atLarge {
+        background: url("/images/bg-tablet-pattern.svg") no-repeat 120% -150%, url("/images/bg-tablet-pattern.svg") no-repeat -60% 3000%;
+    
+        background-size: 800px;
+    }
+    
     font-size: 16px;
     line-height: 1.7;
     font-family: 'Be Vietnam', sans-serif;
