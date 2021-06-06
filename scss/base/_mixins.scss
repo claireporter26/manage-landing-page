@@ -1,6 +1,11 @@
+@mixin atMedium {
+	@media only screen and (min-width: 900px) {
+		@content;
+	}
+}
 
 @mixin atLarge {
-	@media only screen and (min-width: 1000px) {
+	@media only screen and (min-width: 1400px) {
 		@content;
 	}
 }

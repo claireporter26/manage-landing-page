@@ -18,6 +18,15 @@
     margin: 0 auto;
     text-align: inherit;
 
+        // &_footer {
+
+        //     // width: 95%;
+
+        //     @include atLarge {
+        //         width: 85%;
+        //     }
+        // }
+
     }
 }
 
@@ -62,7 +71,8 @@
    
 
     &_ul {
-       display: none; 
+      
+        display: none;
 
        @include atLarge {
            display: flex;
@@ -76,8 +86,9 @@
            display: block;
            background-color: white;
            padding: 1.7rem;
-           margin-top: 5em;
+           margin: 5em auto;
            border-radius: 5px;
+           max-width: 500px;
            
        }
     }
@@ -86,13 +97,21 @@
         list-style-type: none;
         display: block;
         padding: .5em 0;
+        
         font-size: .9rem;
         font-weight: bold;
         cursor: pointer;
+        // align-self: center;
       
 
         &:hover {
             opacity: .6;
+        }
+
+        @include atMedium {
+            padding: 1.2em 0;
+            font-size: 1.2rem;
+        
         }
 
         @include atLarge {
@@ -101,6 +120,7 @@
             padding: 0 1.5em 1em 1.5em;
             line-height: 1;
             font-size: .8rem;
+            // align-self: center;
 
             
 
@@ -157,11 +177,13 @@
 
 
 .header-section {
-    margin-bottom: 2em;
+    margin: auto auto 2em auto;
+    max-width: 750px;
 
     
     @include atLarge {
         margin-bottom: 0; 
+        max-width: inherit;
         // font-size: auto;
          
     }
@@ -241,10 +263,12 @@
 .intro-section {
 
     &_header {
-        margin: 3em 0;
+        margin: 3em auto;
+        max-width: 750px;
 
         @include atLarge {
             margin-top: 0;
+            max-width: inherit;
         }
         
     }
@@ -272,12 +296,26 @@
 
 .middle-section {
     text-align: left;
-    margin-bottom: 2em;
-    padding-left: 1em;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
     font-size: .9rem;
+
+    @include atMedium {
+        padding-left: 4.5rem;
+    }
+
+    @include atLarge {
+        width: 45%;
+        margin: 0 auto;
+        padding-left: 1rem;
+        
+
+    }
 
     &_section {
         margin: 3em 0;
+
+       
 
         @include atLarge {
             &:first-child {
@@ -315,12 +353,11 @@
         
     }
 
-    @include atLarge {
-        width: 45%;
-        margin: 0 auto;
-        
-
+    &_para {
+        max-width: 750px;
     }
+
+   
    
 }
 
@@ -456,6 +493,7 @@
         line-height: 1.3;
         color: #fff;
         max-width: 600px;
+        margin: 0 auto;
 
         @include atLarge {
             text-align: left;

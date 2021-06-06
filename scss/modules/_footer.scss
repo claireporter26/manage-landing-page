@@ -11,7 +11,7 @@ footer {
     // justify-content: space-evenly;
 
     @include atLarge {
-        display: flex;
+        // display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         margin: 1rem auto;
@@ -67,6 +67,13 @@ footer {
     justify-content: space-between;
     align-items: center;
 
+    @include atMedium {
+        justify-content: center;
+        
+        margin-top: 3rem;
+        
+    }
+
     @include atLarge {
         // align-self: flex-start;
         align-items: center;
@@ -79,12 +86,15 @@ footer {
     &_input {
         width: 70%;
         min-width: 250px;
+        max-width: 450px;
         margin: auto .5em;
         border-radius: 25px;
         padding: 1em 2.2em;
         color: $darkGrayishBlue;
         cursor: pointer;
         align-self: center;
+
+        
 
         @include atLarge {
             margin-top: auto;
@@ -102,6 +112,10 @@ footer {
     // margin-right: 10rem;
     align-items: flex-start;
 
+    @include atMedium {
+        justify-content: space-evenly;
+    }
+
     @include atLarge {
         margin: 2rem 1.5rem;
         
@@ -116,7 +130,7 @@ footer {
 
     &--section {
         list-style-type: none;
-        min-width: 4em;
+        min-width: 2em;
         margin: 0 1em;
         display: flex;
         flex-direction: column;
@@ -124,6 +138,7 @@ footer {
         
         @include atLarge {
             height: 100%;
+            min-width: 2.5em;
         }
         
         &1 {
@@ -133,7 +148,7 @@ footer {
 
         li {
             margin: .5rem;
-            font-size: .9rem;
+            font-size: .8rem;
             color: $veryLightGray;
 
             @include atLarge {
@@ -160,27 +175,35 @@ footer {
     // right: 0;
     // order: 5;
     font-size: .5rem;
+    margin-bottom: 3rem;
     
     text-align: center;
 
     @include atLarge {
         text-align: right;
+        margin-bottom: 0;
     }
     
     
 
     &--sm {
         display: block;
+        margin-bottom: 2rem;
 
         @include atLarge {
             display: none;
+            margin-bottom: 0;
         }
     }
 
     &--lg {
         display: none;
+
         
         flex-direction: column;
+        
+
+        
 
         @include atLarge {
             

@@ -2,8 +2,13 @@
     width: 110px;
     align-self: center;
 
+    @include atMedium {
+        width: 120px;
+    }
+
+    
     @include atLarge {
-        width: 130px;
+        width: 150px;
     }
 
     &--footer {
@@ -24,6 +29,11 @@
     height: 20px;
     z-index: 10;
 
+    @include atMedium {
+        width: 30px;
+        height: 30px;
+    }
+
     @include atLarge {
         display: none;
         // flex-grow: 0;
@@ -34,6 +44,14 @@
 .intro-illustration {
     width: 100%;
     margin-top: 1.2em;
+
+    @include atMedium {
+        width: 60%;
+    }
+
+    @include atLarge {
+        width: 100%;
+    }
 
     &_toggle-active {
         display: none;
@@ -76,7 +94,15 @@
 
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 3em;
+    // margin-bottom: 3em;
+    margin: 3em auto;
+
+    max-width: 250px;
+
+    @include atMedium {
+        max-width: 400px;
+        margin: 3em auto;
+    }
 
     @include atLarge {
         margin-bottom: 0;
@@ -86,17 +112,29 @@
     }
 
     &_icon {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         position: absolute;
         top: 2px;
         bottom: 2px;
         left: 2px;
         right: 2px;
 
+        @include atMedium {
+            width: 30px;
+            height: 30px;
+        }
+
+        @include atLarge {
+            width: 20px;
+            height: 20px;
+        }
+
         // @include atLarge {
         //     margin: auto 1rem;
         // }
+
+       
        
 
 
@@ -111,6 +149,8 @@
              left: 2px;
              right: 2px;
             //  margin: auto 1rem;
+
+           
         }
 
         
