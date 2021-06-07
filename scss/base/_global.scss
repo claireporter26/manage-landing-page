@@ -100,6 +100,18 @@ img {
   
 }
 
+.flex-med {
+
+    @include atMedium {
+        display: flex;
+        justify-content:space-around;
+        
+    }
+
+
+    
+}
+
 .flex-lrg {
 
     @include atLarge {
@@ -118,7 +130,7 @@ img {
 
 .flex-center {
 
-    @include atLarge {
+    @include atMedium {
         align-items: center;
 
     }
@@ -128,7 +140,7 @@ img {
 
 .flex-1 {
 
-    @include atLarge {
+    @include atMedium {
         width: 45%;
         
     }
