@@ -63,13 +63,13 @@ footer {
 
 .email-signup {
     margin: 0 auto;
-    width: 90%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
     align-items: center;
 
     @include atMedium {
         justify-content: center;
-        
+        width: 90%;
         margin-top: 3rem;
         
     }
@@ -105,7 +105,7 @@ footer {
 }
 
 .footer_nav-list {
-    margin: 2.2em 3em;
+    margin: 2.2em 1em;
     display: flex;
     justify-content: space-between;
     text-align: left;
@@ -114,6 +114,7 @@ footer {
 
     @include atMedium {
         justify-content: space-evenly;
+        margin: 2.2em 3em;
     }
 
     @include atLarge {
@@ -130,7 +131,7 @@ footer {
 
     &--section {
         list-style-type: none;
-        min-width: 2em;
+        min-width: 1em;
         margin: 0 1em;
         display: flex;
         flex-direction: column;
@@ -139,6 +140,7 @@ footer {
         @include atLarge {
             height: 100%;
             min-width: 2.5em;
+            
         }
         
         &1 {

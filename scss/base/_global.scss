@@ -31,10 +31,7 @@ html {
     // background-size: cover;
     
 
-    @include atLarge {
-        
-        font-size: 20px;
-    }
+  
 }
 
 body, html {
@@ -45,11 +42,7 @@ body, html {
 body {
     // background: url("/images/bg-tablet-pattern.svg") no-repeat -90% -50%;
 
-    @include atLarge {
-        background: url("/images/bg-tablet-pattern.svg") no-repeat 120% -150%, url("/images/bg-tablet-pattern.svg") no-repeat -60% 3000%;
-    
-        background-size: 800px;
-    }
+   
     
     font-size: 16px;
     line-height: 1.7;
@@ -63,7 +56,11 @@ body {
     @include atLarge {
         text-align: left;
         font-size: 40px;
+        background: url("/images/bg-tablet-pattern.svg") no-repeat 120% -150%, url("/images/bg-tablet-pattern.svg") no-repeat -60% 3000%;
+    
+        background-size: 800px;
     }
+   
 
    
   

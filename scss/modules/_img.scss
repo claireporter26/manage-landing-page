@@ -43,10 +43,12 @@
 
 .intro-illustration {
     width: 100%;
+    max-width: 450px;
     margin-top: 1.2em;
 
     @include atMedium {
         width: 60%;
+        
     }
 
     @include atLarge {
