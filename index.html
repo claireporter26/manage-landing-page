@@ -47,7 +47,7 @@
     
         <div class="flex-med flex-reverse flex-center section section_1">
 
-          <div class="flex-1">
+          <div class="flex-1 intro-illustration-container">
             <img class="intro-illustration" src="./images/illustration-intro.svg" alt="Introduction Illustration">
           </div>
 
@@ -64,7 +64,7 @@
 
     </div>
       
-    <div class="flex-lrg section section-2--atlarge">
+    <div class="flex-med section section-2--atMedium section-2--atMedium">
       <div class="flex-1 section-2--atsmall main-container_section-narrow">
         
           <div class="intro-section ">
@@ -182,19 +182,22 @@
         <div class="main-container_section-narrow main-container_section-narrow_footer footer--large flex">
 
           <div class="footer--large_section footer--large_section3">
-            <div class="email-signup flex">
-              <input class="email-signup_input" type="text" placeholder="Updates in your inbox...">
-              <a href="#"><button class="button get-started-btn--dark get-started-btn--no-right-margin footer-btn" type="submit">GO</button></a>
+            <form id="email-signup-form" class="email-signup flex">
+              <div class="flex email-signup_input-container">
+              
+              <input id="email" class="email-signup_input" type="email" required="required" placeholder="Updates in your inbox..."><br/>
+            </div>
+              <a class="flex flex-center" href="#"><button class="button get-started-btn--dark get-started-btn--no-right-margin footer-btn" type="submit">GO</button></a>
               
               
 
               
-            </div>
+            </form>
             <div class="legal legal--lg">
               <p class="copyright">Copyright 2020. All Rights Reserved</p>
               <div class="attribution">
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-                Coded by <a href="#">Claire Porter</a>.
+                Coded by <a href="https://claireporter26.github.io/">Claire Porter</a>.
               </div>
             </div>
           </div>
@@ -248,7 +251,7 @@
               <p class="copyright">Copyright 2020. All Rights Reserved</p>
               <div class="attribution">
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-                Coded by <a href="#">Claire Porter</a>.
+                Coded by <a href="https://claireporter26.github.io/">Claire Porter</a>.
               </div>
             </div>
           </div>
@@ -260,6 +263,7 @@
   
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./JS/app.js"></script>
 </body>

@@ -46,6 +46,7 @@
     max-width: 450px;
     margin-top: 1.2em;
 
+
     @include atMedium {
         // width: 60%;
         
@@ -57,6 +58,16 @@
 
     &_toggle-active {
         display: none;
+    }
+
+    &-container {
+
+        @include atMedium {
+            display: flex;
+            justify-content: center;
+        }
+        
+
     }
 }
 

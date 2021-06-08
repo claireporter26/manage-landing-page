@@ -19,6 +19,14 @@ $(document).ready(function(){
 
 });
 
+$('#email-signup-form').validate();
+
+jQuery.extend(jQuery.validator.messages, {
+  
+  email: "Please insert a valid email",
+ 
+});
+
 // const swiper = new Swiper('.swiper-container', {
 //     // Optional parameters
 //     // direction: 'vertical',

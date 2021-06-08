@@ -109,6 +109,19 @@ img {
           flex-direction: row-reverse;
 }
 
+label {
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+#email-error {
+  color: red;
+  font-style: italic;
+  font-size: .6rem;
+}
+
 .manage-logo {
   width: 110px;
   -ms-flex-item-align: center;
@@ -174,6 +187,17 @@ img {
 
 .intro-illustration_toggle-active {
   display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  .intro-illustration-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .testimonial_image {
@@ -381,7 +405,7 @@ img {
 .header-section_title {
   font-weight: 700;
   line-height: 1.3;
-  margin: .3em 0;
+  margin: .3em auto;
 }
 
 @media only screen and (min-width: 900px) {
@@ -410,6 +434,9 @@ img {
   }
   .section_1 {
     margin-top: 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -442,7 +469,7 @@ img {
   max-width: 750px;
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 900px) {
   .intro-section_header {
     margin-top: 0;
     max-width: inherit;
@@ -455,14 +482,21 @@ img {
   text-align: inherit;
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 900px) {
   .section-2--atsmall {
     width: 45%;
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .section-2--atMedium {
+    width: 85%;
+    margin-top: 3rem;
+  }
+}
+
 @media only screen and (min-width: 1400px) {
-  .section-2--atlarge {
+  .section-2--atLarge {
     width: 85%;
     margin-top: 3rem;
   }
@@ -784,6 +818,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 @media only screen and (min-width: 900px) {
@@ -823,11 +858,22 @@ footer {
       align-self: center;
 }
 
+.email-signup_input.error {
+  color: red;
+}
+
 @media only screen and (min-width: 1400px) {
   .email-signup_input {
     margin-top: auto;
     margin-bottom: auto;
   }
+}
+
+.email-signup_input-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer_nav-list {
