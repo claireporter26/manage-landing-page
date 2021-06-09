@@ -5,14 +5,25 @@ button {
     margin: 2em auto;
     font-weight: 700;
     color: $darkGrayishBlue;
-    font-size: .8rem; 
+    font-size: .6rem; 
     cursor: pointer;
     display: inline-block;
     align-self: center;
+    min-width: min-content;
 
     &:hover {
         opacity: .8;
     }
+
+    @include atMedium {
+        font-size: .7rem; 
+    }
+
+    @include atLarge {
+        font-size: .8rem; 
+    }
+
+
     
 
     
@@ -65,9 +76,19 @@ button {
     // &--no-bottom-margin {
     //     margin-bottom: 0;
     // }
+
+    @include atMedium {
+        font-size: .3rem;
+    }
 }
 
+.btn_simplify-section {
+    
+} 
+
 .footer-btn {
+
+    
 
     @include atLarge {
         // margin-top: 2rem;

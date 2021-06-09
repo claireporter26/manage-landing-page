@@ -53,12 +53,17 @@ body {
     
     text-align: center;
 
-    @include atLarge {
+    @include atMedium {
         text-align: left;
+    }
+
+    @include atLarge {
+        
         font-size: 40px;
         background: url("/images/bg-tablet-pattern.svg") no-repeat 120% -150%, url("/images/bg-tablet-pattern.svg") no-repeat -60% 3000%;
     
         background-size: 800px;
+        
     }
    
 
