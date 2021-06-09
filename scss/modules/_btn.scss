@@ -83,7 +83,10 @@ button {
 }
 
 .btn_simplify-section {
-    
+
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-end;
 } 
 
 .footer-btn {
