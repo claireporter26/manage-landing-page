@@ -52,15 +52,25 @@ body {
     padding-top: 1.2em;
     
     text-align: center;
+    // background: url("../images/bg-tablet-pattern.svg");
+    // background: url("../images/bg-tablet-pattern.svg") no-repeat 200% -300%, url("../images/bg-tablet-pattern-small.svg") no-repeat 100% 100%;
+    background: url("../images/bg-tablet-pattern.svg") no-repeat 75px -150px, url("../images/bg-tablet-pattern.svg") no-repeat 230px 410px;
+    background-size: 450px, 380px;
 
     @include atMedium {
         text-align: left;
+        background: url("../images/bg-tablet-pattern.svg") no-repeat 250% 900%;
+        // background: url("../images/bg-tablet-pattern.svg");
+    
+        background-size: 800px;
+        // background: url("../images/bg-tablet-pattern.svg");
     }
 
     @include atLarge {
         
         font-size: 40px;
-        background: url("/images/bg-tablet-pattern.svg") no-repeat 120% -150%, url("/images/bg-tablet-pattern.svg") no-repeat -60% 3000%;
+        background: url("../images/bg-tablet-pattern.svg") no-repeat 130% -160%, url("../images/bg-tablet-pattern.svg") no-repeat -90% 900%;
+        // background: url("../images/bg-tablet-pattern.svg");
     
         background-size: 800px;
         

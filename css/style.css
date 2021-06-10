@@ -22,18 +22,22 @@ body {
   color: #242d52;
   padding-top: 1.2em;
   text-align: center;
+  background: url("../images/bg-tablet-pattern.svg") no-repeat 75px -150px, url("../images/bg-tablet-pattern.svg") no-repeat 230px 410px;
+  background-size: 450px, 380px;
 }
 
 @media only screen and (min-width: 900px) {
   body {
     text-align: left;
+    background: url("../images/bg-tablet-pattern.svg") no-repeat 250% 900%;
+    background-size: 800px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   body {
     font-size: 40px;
-    background: url("/images/bg-tablet-pattern.svg") no-repeat 120% -150%, url("/images/bg-tablet-pattern.svg") no-repeat -60% 3000%;
+    background: url("../images/bg-tablet-pattern.svg") no-repeat 130% -160%, url("../images/bg-tablet-pattern.svg") no-repeat -90% 900%;
     background-size: 800px;
   }
 }
@@ -633,6 +637,12 @@ label {
   margin: 0 10px;
 }
 
+@media only screen and (min-width: 900px) {
+  .testimonials-section {
+    margin: 0;
+  }
+}
+
 .testimonial {
   margin: 6em auto 3em auto;
   background-color: #fafafa;
@@ -680,18 +690,25 @@ label {
 }
 
 .getstarted-section {
-  background-color: #f25f3a;
+  background: url("../images/bg-simplify-section-mobile.svg") no-repeat left, #f25f3a;
+  background-size: 75px;
+}
+
+@media only screen and (min-width: 900px) {
+  .getstarted-section {
+    background: url("../images/bg-simplify-section-desktop.svg") no-repeat 300px bottom, #f25f3a;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
   .getstarted-section {
-    background-image: url("/images/bg-simplify-section-desktop");
+    background: url("../images/bg-simplify-section-desktop.svg") no-repeat 300px bottom, #f25f3a;
   }
 }
 
 .getstarted-section_content {
   text-align: center;
-  padding: 2em 0;
+  padding: 3.5rem 0;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -715,6 +732,7 @@ label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 2rem 0;
   }
 }
 

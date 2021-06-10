@@ -450,6 +450,7 @@
     width: 100%;
     height: 100%;
     max-width: 1700px;
+    // margin: auto 0;
     
    
   }
@@ -464,6 +465,10 @@
     // position: relative;
    max-height: 700px;
    margin: 0 10px;
+
+   @include atMedium {
+       margin: 0;
+   }
     
   
 
@@ -556,22 +561,31 @@
 }
 
 .getstarted-section {
-    background-color: $brightOrange;
+    // background-color: $brightOrange;
 
-    // padding: 4.5em auto;
+    // padding: 4.5rem auto;
+    background: url("../images/bg-simplify-section-mobile.svg") no-repeat left, $brightOrange;
 
+    background-size: 75px;
+
+    @include atMedium {
+        // padding: 1.5em 0;
+        background: url("../images/bg-simplify-section-desktop.svg") no-repeat 300px bottom, $brightOrange;
+       
+        
+    }
     
 
     @include atLarge {
         // padding: 1.5em 0;
-        background-image: url("/images/bg-simplify-section-desktop");
+        background: url("../images/bg-simplify-section-desktop.svg") no-repeat 300px bottom, $brightOrange;
        
         
     }
 
     &_content {
         text-align: center;
-        padding: 2em 0;
+        padding: 3.5rem 0;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -584,6 +598,7 @@
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
+            padding: 2rem 0;
             
             
             
