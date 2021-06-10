@@ -17,19 +17,37 @@ $(document).ready(function(){
 
     });
 
+    $('#email-signup-form').validate({
+      rules: {
+        email: {
+          required: false,
+          email: false
+        }
+      }
+      
+    });
+
+    // $("#myform").validate({
+    //   rules: {
+    //     // simple rule, converted to {required:true}
+    //     name: "required",
+    //     // compound rule
+    //     email: {
+    //       required: true,
+    //       email: true
+    //     }
+    //   }
+    // });
+    
+    jQuery.extend(jQuery.validator.messages, {
+      
+      email: "Please insert a valid email",
+     
+    });
+
 });
 
-$('#email-signup-form').validate({
-  email: {
-    required: true
-  }
-});
 
-jQuery.extend(jQuery.validator.messages, {
-  
-  email: "Please insert a valid email",
- 
-});
 
 // const swiper = new Swiper('.swiper-container', {
 //     // Optional parameters
