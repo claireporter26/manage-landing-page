@@ -164,10 +164,16 @@ img {
 
 label {
     display: block;
-    // margin-left: 2em;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
+    margin-left: 2em;
+    // position: absolute;
+    // bottom: -10px;
+    // left: 0;
+    text-align: left;
+    padding: .5em;
+
+    @include atMedium {
+        // left: 100px;
+    }
 }
 
 #email-error {

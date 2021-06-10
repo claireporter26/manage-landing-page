@@ -8,7 +8,7 @@ button {
     font-size: .6rem; 
     cursor: pointer;
     display: inline-block;
-    align-self: center;
+    // align-self: center;
     min-width: min-content;
 
     &:hover {
@@ -84,19 +84,45 @@ button {
 
 .btn_simplify-section {
 
-    flex-basis: 20%;
-    display: flex;
+    margin: auto;
+
+    @include atMedium {
+        flex-basis: 20%;
+        display: flex;
     justify-content: flex-end;
+    margin: 0;
+    
+    }
+
+   
+    
 } 
 
 .footer-btn {
 
     
+        // margin-top: .3rem;
+        // align-self: flex-start;
+        padding: .7rem 1.5rem;
+        margin: .2rem;
+        
+        
+        
+    
 
     @include atLarge {
         // margin-top: 2rem;
-        margin: auto;
-        align-self: center;
+        // margin: auto;
+        
+    }
+
+    &_container {
+
+        // display: flex;
+        align-items: flex-start;
+        // align-self: flex-start;
+        
+       
     }
     
 }

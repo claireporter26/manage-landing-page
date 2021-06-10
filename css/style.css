@@ -114,9 +114,9 @@ img {
 
 label {
   display: block;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
+  margin-left: 2em;
+  text-align: left;
+  padding: .5em;
 }
 
 #email-error {
@@ -451,7 +451,7 @@ label {
 }
 
 .section_1 {
-  margin-top: 0;
+  margin-top: .5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -462,6 +462,7 @@ label {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: 2rem;
   }
 }
 
@@ -470,6 +471,7 @@ label {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin-top: 0;
   }
 }
 
@@ -523,11 +525,12 @@ label {
 }
 
 .section-2--atMedium {
-  width: 85%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 900px) {
   .section-2--atMedium {
+    width: 85%;
     margin-top: 3rem;
     margin: auto;
     -webkit-box-pack: justify;
@@ -739,9 +742,6 @@ button {
   font-size: .6rem;
   cursor: pointer;
   display: inline-block;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
   min-width: min-content;
@@ -796,23 +796,32 @@ button:hover {
 }
 
 .btn_simplify-section {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  margin: auto;
 }
 
-@media only screen and (min-width: 1400px) {
-  .footer-btn {
-    margin: auto;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+@media only screen and (min-width: 900px) {
+  .btn_simplify-section {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0;
   }
+}
+
+.footer-btn {
+  padding: .7rem 1.5rem;
+  margin: .2rem;
+}
+
+.footer-btn_container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .btn_box-shadow {
@@ -894,15 +903,14 @@ footer {
 }
 
 .email-signup {
-  margin: 0 auto;
+  margin: 1rem auto;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media only screen and (min-width: 900px) {
@@ -917,9 +925,9 @@ footer {
 
 @media only screen and (min-width: 1400px) {
   .email-signup {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -934,7 +942,7 @@ footer {
   max-width: 450px;
   margin: auto .5em;
   border-radius: 25px;
-  padding: 1em 2.2em;
+  padding: .5rem 1.5rem;
   color: #9095a7;
   cursor: pointer;
   -ms-flex-item-align: center;
@@ -954,6 +962,9 @@ footer {
 }
 
 .email-signup_input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

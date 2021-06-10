@@ -210,6 +210,8 @@
          
     }
 
+   
+
     // &_container {
     //     just
     // };
@@ -266,19 +268,22 @@
     }
 
     &_1 {
-        margin-top: 0;
+        margin-top: .5rem;
         
         justify-content: space-between; 
         
 
         @include atMedium {
             justify-content: space-between; 
+            margin-top: 2rem;
             
             
         }
 
         @include atLarge {
             justify-content: space-evenly; 
+            margin-top: 0;
+            
         }
     }
     
@@ -339,9 +344,10 @@
 }
 
 .section-2--atMedium {
-    width: 85%;
+    width: 100%;
 
     @include atMedium {
+        width: 85%;
         // width: 100%;
         margin-top: 3rem;
         // margin: inherit auto;
