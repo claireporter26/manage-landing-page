@@ -815,7 +815,7 @@ button:hover {
 
 .footer-btn {
   padding: .7rem 1.5rem;
-  margin: .2rem;
+  margin: .1rem;
 }
 
 .footer-btn_container {
@@ -938,11 +938,11 @@ footer {
 
 .email-signup_input {
   width: 70%;
-  min-width: 250px;
+  min-width: 240px;
   max-width: 450px;
   margin: auto .5em;
   border-radius: 25px;
-  padding: .5rem 1.5rem;
+  padding: .6rem 1.5rem;
   color: #9095a7;
   cursor: pointer;
   -ms-flex-item-align: center;

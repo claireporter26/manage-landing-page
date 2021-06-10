@@ -19,7 +19,11 @@ $(document).ready(function(){
 
 });
 
-$('#email-signup-form').validate();
+$('#email-signup-form').validate({
+  email: {
+    required: true
+  }
+});
 
 jQuery.extend(jQuery.validator.messages, {
   
