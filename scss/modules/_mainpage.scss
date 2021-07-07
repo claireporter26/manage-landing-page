@@ -127,17 +127,25 @@
     }
 
     &_1 {
+        display: flex;
+        flex-direction: column;
         margin-top: .5rem;
-        justify-content: space-between; 
+        justify-content: center; 
+        max-width: 700px;
+        text-align: center;
+
         
-        @include atMedium {
-            justify-content: space-between; 
-            margin-top: 2rem;  
-        }
+        // @include atMedium {
+        //     justify-content: space-between; 
+        //     margin-top: 2rem;  
+        // }
 
         @include atLarge {
-            justify-content: space-evenly; 
+            justify-content: space-between; 
             margin-top: 0; 
+            flex-direction: row-reverse;
+            text-align: left;
+            max-width: inherit;
         }
     } 
 }
@@ -173,7 +181,7 @@
 
         @include atMedium {
             margin-top: 0;
-            max-width: inherit;
+            max-width: 500px;
         } 
     }
 }
@@ -216,6 +224,7 @@
 
     @include atMedium {
         padding-left: auto;
+        max-width: 500px;
     }
 
     @include atLarge {
@@ -223,13 +232,17 @@
         margin: 0;
         justify-content: space-between;
         padding-left: 1rem;
-        max-width: 700px;
+        // max-width: 700px;
     }
 
     &_section {
         margin: 3em 0;
 
         @include atMedium {
+
+            display: flex;
+            flex-direction: column;
+
             &:first-child {
                 margin-top: 0;
             }
@@ -262,6 +275,13 @@
 
     &_para {
         max-width: 750px;
+
+        
+        @include atLarge {
+            width: 86%;
+            align-self: flex-end;
+        }
+
     }
 }
 
