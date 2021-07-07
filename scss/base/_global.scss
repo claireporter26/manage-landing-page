@@ -35,61 +35,31 @@ html {
 }
 
 body, html {
-    height: 100%;
-    
+    height: 100%;  
 }
 
 body {
-    // background: url("/images/bg-tablet-pattern.svg") no-repeat -90% -50%;
-
-   
-    
     font-size: 16px;
     line-height: 1.7;
     font-family: 'Be Vietnam', sans-serif;
-    //font Be Vietnam, Weights: 400, 500, 700
     color: $darkBlue;
     padding-top: 1.2em;
-    
     text-align: center;
-    // background: url("../images/bg-tablet-pattern.svg");
-    // background: url("../images/bg-tablet-pattern.svg") no-repeat 200% -300%, url("../images/bg-tablet-pattern-small.svg") no-repeat 100% 100%;
     background: url("../images/bg-tablet-pattern.svg") no-repeat 75px -150px, url("../images/bg-tablet-pattern.svg") no-repeat 230px 410px;
     background-size: 450px, 380px;
 
     @include atMedium {
         text-align: left;
         background: url("../images/bg-tablet-pattern.svg") no-repeat 250% 900%;
-        // background: url("../images/bg-tablet-pattern.svg");
-    
         background-size: 800px;
-        // background: url("../images/bg-tablet-pattern.svg");
     }
 
-    @include atLarge {
-        
+    @include atLarge {  
         font-size: 40px;
         background: url("../images/bg-tablet-pattern.svg") no-repeat 130% -160%, url("../images/bg-tablet-pattern.svg") no-repeat -90% 900%;
-        // background: url("../images/bg-tablet-pattern.svg");
-    
-        background-size: 800px;
-        
+        background-size: 800px;  
     }
-   
-
-   
-  
 }
-
-// .body {
-//     &_toggle-active {
-          
-        
-    
-//     }
-// }
-
-
 
 img {
     max-width: 100%;
@@ -97,7 +67,6 @@ img {
 }
 
 .greyed-out {
-
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -109,8 +78,7 @@ img {
     z-index: 5;
 
     &_toggle-active {
-        visibility: visible; 
-        
+        visibility: visible;   
     }
   
 }
@@ -118,13 +86,8 @@ img {
 .flex-med {
 
     @include atMedium {
-        display: flex;
-        // justify-content:space-around;
-        
-    }
-
-
-    
+        display: flex;   
+    } 
 }
 
 .flex-lrg {
@@ -132,11 +95,7 @@ img {
     @include atLarge {
         display: flex;
         justify-content:space-around;
-        
     }
-
-
-    
 }
 
 .flex-reverse {
@@ -147,21 +106,14 @@ img {
 
     @include atMedium {
         align-items: center;
-
-    }
-
-    
-    
-    
+    }  
 }
 
 .flex-1 {
 
     @include atMedium {
-        width: 45%;
-        
+        width: 45%; 
     }
-   
 }
 
 .flex {
@@ -175,29 +127,15 @@ img {
 label {
     display: block;
     margin-left: 2em;
-    // position: absolute;
-    // bottom: -10px;
-    // left: 0;
     text-align: left;
     padding: .5em;
-
-    @include atMedium {
-        // left: 100px;
-    }
 }
 
 #email-error {
     color: red;
     font-style: italic;
     font-size: .6rem;
-    // display: block;
 }
-
-
-//footer
-
-
-
 
 // ## Layout
 

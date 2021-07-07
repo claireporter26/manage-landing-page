@@ -6,16 +6,12 @@ footer {
 }
 
 .footer--large {
-
     flex-direction: column;
-    // justify-content: space-evenly;
 
     @include atLarge {
-        // display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         margin: 1rem auto;
-        // height: min-content;
     }
 
     &_section {
@@ -24,7 +20,6 @@ footer {
             padding: .5rem auto;
             margin: .5rem auto;
         };
-        
     }
 
     &_section1 {
@@ -34,12 +29,7 @@ footer {
             flex-direction: column-reverse;
             justify-content: space-between;
             flex-basis: 1;
-            // margin: .5rem;
-            // height: min-content;
-            
-            
         }
-        
     }
 
     &_section2 {
@@ -55,34 +45,23 @@ footer {
     }
 }
 
-.footer_logo {
-    // flex-basis: 1;
-}
-
-
-
 .email-signup {
     margin: 1rem auto;
     width: 100%;
     justify-content: center;
     align-items: flex-start;
-    // position: relative;
-    
 
     @include atMedium {
         justify-content: center;
         width: 90%;
-        margin-top: 3rem;
-        
+        margin-top: 3rem; 
     }
 
     @include atLarge {
-        // align-self: flex-start;
         align-items: flex-start;
         justify-content: center;
         height: 30%;
         margin-top: 2rem;
-        
     }
 
     &_input {
@@ -96,30 +75,17 @@ footer {
         cursor: pointer;
         align-self: center;
 
-        
-        
-
-        
-        
-
         &.error {
             color: red;
-            // margin: .5em auto;
-            
-           
         }
-
-        
 
         @include atLarge {
             margin-top: auto;
-            margin-bottom: auto;
-            
+            margin-bottom: auto; 
         }
 
         &-container {
             display: flex;
-            
             flex-direction: column;
         }
     }
@@ -130,7 +96,6 @@ footer {
     display: flex;
     justify-content: space-between;
     text-align: left;
-    // margin-right: 10rem;
     align-items: flex-start;
 
     @include atMedium {
@@ -140,16 +105,8 @@ footer {
 
     @include atLarge {
         margin: 2rem 1.5rem;
-        
-
-        
-        
-            
-        
     }
-    
-
-
+   
     &--section {
         list-style-type: none;
         min-width: 1em;
@@ -160,13 +117,11 @@ footer {
         
         @include atLarge {
             height: 100%;
-            min-width: 2.5em;
-            
+            min-width: 2.5em;  
         }
         
         &1 {
-            margin-right: 3em;
-            
+            margin-right: 3em; 
         }
 
         li {
@@ -178,7 +133,6 @@ footer {
                 font-size: .7rem;
             }
 
-
             &:hover {
                 color: $brightOrange;
                 cursor: pointer;
@@ -188,15 +142,7 @@ footer {
     }
 }
 
-.social-media {
-    // flex-basis: 1;
-}
-
 .legal {
-    // position: absolute;
-    // bottom: 0;
-    // right: 0;
-    // order: 5;
     font-size: .5rem;
     margin-bottom: 3rem;
     
@@ -207,9 +153,7 @@ footer {
         margin-bottom: 0;
         font-size: .8rem;
     }
-    
-    
-
+  
     &--sm {
         display: block;
         margin-bottom: 2rem;
@@ -222,31 +166,18 @@ footer {
 
     &--lg {
         display: none;
-
-        
         flex-direction: column;
-        
-
-        
-
+    
         @include atLarge {
-            
             display: flex;
-            // height: 30%;
             margin-bottom: 2rem;
             justify-content: flex-end;
         }
     }
-    
-    
-    // display: inline;
 }
 
-.copyright, .attribution {
-    
-    
+.copyright, .attribution { 
     color: $darkGrayishBlue;
-
 }
 
 .copyright {
@@ -267,7 +198,6 @@ footer {
 }
 
 .attribution a { 
-    // color: hsl(228, 45%, 44%);
     color: $veryLightGray; 
     text-decoration: none;
 }

@@ -6,7 +6,6 @@
         width: 120px;
     }
 
-    
     @include atLarge {
         width: 150px;
     }
@@ -21,7 +20,6 @@
             margin-top: 2rem;
         }
     }
-    
 }
 
 .hamburger-icon {
@@ -38,19 +36,12 @@
         display: none;
         // flex-grow: 0;
     }
-    
 }
 
 .intro-illustration {
     width: 100%;
     max-width: 450px;
     margin-top: 1.2em;
-
-
-    @include atMedium {
-        
-        
-    }
 
     @include atLarge {
         width: 100%;
@@ -66,8 +57,6 @@
             display: flex;
             justify-content: center;
         }
-        
-
     }
 }
 
@@ -75,8 +64,7 @@
     width: 75px;
 }
 
-.social-media_icon-container {
-    
+.social-media_icon-container { 
     height: 34px;
     width: 34px;
 
@@ -85,31 +73,22 @@
     position: relative;
 
     &:hover {
-        cursor: pointer;
-        
-
-        
+        cursor: pointer;  
     }
 
     &:hover .social-media_icon--hover {
-        display: flex;
-        
+        display: flex;    
     }
 
     @include atLarge {
         margin-bottom: 2rem;
-        
-        // justify-content: center;
     }
 }
 
 .social-media {
-
     display: flex;
     justify-content: space-evenly;
-    // margin-bottom: 3em;
     margin: 3em auto;
-
     max-width: 250px;
 
     @include atMedium {
@@ -120,8 +99,6 @@
     @include atLarge {
         margin-bottom: 0;
         min-width: 250px;
-
-
     }
 
     &_icon {
@@ -143,16 +120,6 @@
             height: 20px;
         }
 
-        // @include atLarge {
-        //     margin: auto 1rem;
-        // }
-
-       
-       
-
-
-
-
         &--hover {
             display: none;
             z-index: 100;
@@ -161,27 +128,6 @@
              bottom: 2px;
              left: 2px;
              right: 2px;
-            //  margin: auto 1rem;
-
-           
         }
-
-        
-
-        
-
-       
     }
 }
-
-.mobile-background-img {
-    
-}
-
-
-
-// For the social icons, you can use the icons provided or a font icon library. Some suggestions for font icon libraries can be found below:
-
-// - [Font Awesome](https://fontawesome.com)
-// - [IcoMoon](https://icomoon.io)
-// - [Ionicons](https://ionicons.com)
