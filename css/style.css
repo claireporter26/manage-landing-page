@@ -13,7 +13,7 @@ a {
 
 body, html {
   height: 100%;
-  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .body {
@@ -36,7 +36,6 @@ body, html {
 @media only screen and (min-width: 760px) {
   .cover {
     background: url("../images/bg-tablet-pattern.svg") no-repeat -500% -160%;
-    background: url("../images/bg-tablet-pattern.svg") no-repeat 0% 0%;
     background-size: 800px;
   }
 }
@@ -69,7 +68,7 @@ img {
   top: 0;
   left: 0;
   height: 200%;
-  width: 200%;
+  width: 100%;
   min-height: -webkit-min-content;
   min-height: -moz-min-content;
   min-height: min-content;
@@ -515,6 +514,10 @@ label {
     text-align: left;
     max-width: inherit;
   }
+}
+
+.section:last-of-type {
+  margin-bottom: 0;
 }
 
 .section-header {

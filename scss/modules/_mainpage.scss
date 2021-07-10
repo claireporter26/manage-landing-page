@@ -150,6 +150,10 @@
     } 
 }
 
+.section:last-of-type {
+    margin-bottom: 0;
+}
+
 .section-header {
     font-size: 2.2rem;
     font-weight: 700;
