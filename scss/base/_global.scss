@@ -55,6 +55,7 @@ img {
     left: 0;
     height: 100%;
     width: 100%;
+    min-height: min-content;
     background-image: linear-gradient(rgba(black, .1), rgba(black, .9));
     opacity: .7;
     z-index: 5;
