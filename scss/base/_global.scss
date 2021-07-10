@@ -12,27 +12,80 @@ a {
 
 body, html {
     height: 100%;  
+    overflow-x: hidden;
 }
 
-body {
+.body {
+    
     font-size: 16px;
     line-height: 1.7;
     font-family: 'Be Vietnam', sans-serif;
     color: $darkBlue;
-    padding-top: 1.2em;
+    
     text-align: center;
+    // width: 100%;
+    // margin: 0;
+    // padding: 0;
+    // padding-top: 1.2em;
+    // background: url("../images/bg-tablet-pattern.svg") no-repeat 75px -150px, url("../images/bg-tablet-pattern.svg") no-repeat 230px 410px;
+    // background-size: 450px, 380px;
+    // overflow-x: hidden;
+    
+
+    // @include atSmaller {
+    //     background: url("../images/bg-tablet-pattern.svg") no-repeat -500% -160%;
+    //     background-size: 800px;
+      
+        
+    // }
+
+    // @include atMedium {
+    //     text-align: left;
+    //     background: url("../images/bg-tablet-pattern.svg") no-repeat 250% 900%;
+    //     background-size: 800px;
+        
+       
+    // }
+
+    // @include atLarge {  
+    //     font-size: 40px;
+    //     background: url("../images/bg-tablet-pattern.svg") no-repeat 135% -280%, url("../images/bg-tablet-pattern.svg") no-repeat -90% 900%;
+    //     background-size: 800px;  
+    //     padding-top: 0;
+        
+        
+    // }
+  
+    
+    
+    
+
+   
+}
+
+.cover {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 1.2em;
     background: url("../images/bg-tablet-pattern.svg") no-repeat 75px -150px, url("../images/bg-tablet-pattern.svg") no-repeat 230px 410px;
     background-size: 450px, 380px;
+    
 
     @include atSmaller {
         background: url("../images/bg-tablet-pattern.svg") no-repeat -500% -160%;
+        background: url("../images/bg-tablet-pattern.svg") no-repeat 0% 0%;
         background-size: 800px;
+      
+        
     }
 
     @include atMedium {
         text-align: left;
         background: url("../images/bg-tablet-pattern.svg") no-repeat 250% 900%;
         background-size: 800px;
+        
+       
     }
 
     @include atLarge {  
@@ -40,6 +93,8 @@ body {
         background: url("../images/bg-tablet-pattern.svg") no-repeat 135% -280%, url("../images/bg-tablet-pattern.svg") no-repeat -90% 900%;
         background-size: 800px;  
         padding-top: 0;
+        
+        
     }
 }
 
