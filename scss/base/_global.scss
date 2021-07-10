@@ -10,30 +10,6 @@ a {
     margin: 0;
 }
 
-html {
-
-    // background-image: url("bg-tablet-pattern.svg");
-    
-    // background-repeat: no-repeat;
-    // // background-repeat: space;
-    // // background-position: absolute;
-    // background-position-x: -90%;
-    // background-position-y: -50%;
-    // // top: -1000px;
-    // right: -500px;
-   
-
-    // background: url("/images/bg-tablet-pattern-small.svg") no-repeat -98% 60%;
-    
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
-    
-
-  
-}
-
 body, html {
     height: 100%;  
 }
@@ -48,6 +24,11 @@ body {
     background: url("../images/bg-tablet-pattern.svg") no-repeat 75px -150px, url("../images/bg-tablet-pattern.svg") no-repeat 230px 410px;
     background-size: 450px, 380px;
 
+    @include atSmaller {
+        background: url("../images/bg-tablet-pattern.svg") no-repeat -500% -160%;
+        background-size: 800px;
+    }
+
     @include atMedium {
         text-align: left;
         background: url("../images/bg-tablet-pattern.svg") no-repeat 250% 900%;
@@ -56,7 +37,7 @@ body {
 
     @include atLarge {  
         font-size: 40px;
-        background: url("../images/bg-tablet-pattern.svg") no-repeat 130% -160%, url("../images/bg-tablet-pattern.svg") no-repeat -90% 900%;
+        background: url("../images/bg-tablet-pattern.svg") no-repeat 135% -280%, url("../images/bg-tablet-pattern.svg") no-repeat -90% 900%;
         background-size: 800px;  
         padding-top: 0;
     }

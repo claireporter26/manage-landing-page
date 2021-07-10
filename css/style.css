@@ -26,6 +26,13 @@ body {
   background-size: 450px, 380px;
 }
 
+@media only screen and (min-width: 760px) {
+  body {
+    background: url("../images/bg-tablet-pattern.svg") no-repeat -500% -160%;
+    background-size: 800px;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   body {
     text-align: left;
@@ -37,7 +44,7 @@ body {
 @media only screen and (min-width: 1400px) {
   body {
     font-size: 40px;
-    background: url("../images/bg-tablet-pattern.svg") no-repeat 130% -160%, url("../images/bg-tablet-pattern.svg") no-repeat -90% 900%;
+    background: url("../images/bg-tablet-pattern.svg") no-repeat 135% -280%, url("../images/bg-tablet-pattern.svg") no-repeat -90% 900%;
     background-size: 800px;
     padding-top: 0;
   }
@@ -404,7 +411,7 @@ label {
     display: inline-block;
     padding: 0 1.5em 1em 1.5em;
     line-height: 1;
-    font-size: .8rem;
+    font-size: .9rem;
   }
 }
 
@@ -592,6 +599,7 @@ label {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-left: 1rem;
+    font-size: 1rem;
   }
 }
 
